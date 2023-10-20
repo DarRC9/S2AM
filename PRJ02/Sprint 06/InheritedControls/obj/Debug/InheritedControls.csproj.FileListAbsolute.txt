@@ -1,0 +1,7 @@
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\obj\Debug\InheritedControls.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\bin\Debug\InheritedControls.dll
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\bin\Debug\InheritedControls.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\obj\Debug\InheritedControls.SWTextbox.resources
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\obj\Debug\InheritedControls.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\obj\Debug\InheritedControls.dll
+C:\Github\S2AM\PRJ02\Sprint 06\InheritedControls\obj\Debug\InheritedControls.pdb
