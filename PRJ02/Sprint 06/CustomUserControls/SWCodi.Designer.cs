@@ -1,14 +1,13 @@
-﻿
-namespace CustomUserControls
+﻿namespace CustomUserControls
 {
     partial class SWCodi
     {
-        /// <summary> 
+        /// <summary>
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary> 
+        /// <summary>
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
@@ -23,7 +22,7 @@ namespace CustomUserControls
 
         #region Component Designer generated code
 
-        /// <summary> 
+        /// <summary>
         /// Required method for Designer support - do not modify 
         /// the contents of this method with the code editor.
         /// </summary>
@@ -35,7 +34,7 @@ namespace CustomUserControls
             // 
             // CodiTxt
             // 
-            this.CodiTxt.Location = new System.Drawing.Point(39, 49);
+            this.CodiTxt.Location = new System.Drawing.Point(31, 35);
             this.CodiTxt.Name = "CodiTxt";
             this.CodiTxt.Size = new System.Drawing.Size(100, 22);
             this.CodiTxt.TabIndex = 0;
@@ -43,9 +42,9 @@ namespace CustomUserControls
             // 
             // DescTxt
             // 
-            this.DescTxt.Location = new System.Drawing.Point(164, 49);
+            this.DescTxt.Location = new System.Drawing.Point(175, 35);
             this.DescTxt.Name = "DescTxt";
-            this.DescTxt.Size = new System.Drawing.Size(312, 22);
+            this.DescTxt.Size = new System.Drawing.Size(412, 22);
             this.DescTxt.TabIndex = 1;
             // 
             // SWCodi
@@ -55,7 +54,7 @@ namespace CustomUserControls
             this.Controls.Add(this.DescTxt);
             this.Controls.Add(this.CodiTxt);
             this.Name = "SWCodi";
-            this.Size = new System.Drawing.Size(527, 111);
+            this.Size = new System.Drawing.Size(620, 90);
             this.ResumeLayout(false);
             this.PerformLayout();
 

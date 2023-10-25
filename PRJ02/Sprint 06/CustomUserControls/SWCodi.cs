@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Data;
 using System.Drawing;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Controls
+namespace CustomUserControls
 {
-    public partial class SWCodi : UserControl
+    public partial class SWCodi: UserControl
     {
         public SWCodi()
         {
@@ -57,5 +57,6 @@ namespace Controls
 
             DescTxt.Text = desc;
         }
+
     }
 }

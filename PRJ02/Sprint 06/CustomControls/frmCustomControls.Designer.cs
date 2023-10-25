@@ -37,15 +37,16 @@ namespace CustomControls
             this.TextTxt = new InheritedControls.SWTextbox();
             this.CodiTxt = new InheritedControls.SWTextbox();
             this.NumeroTxt = new InheritedControls.SWTextbox();
-            this.swCodi1 = new Controls.SWCodi();
-            this.appLauncher1 = new Controls.AppLauncher();
+            this.swCodi1 = new CustomUserControls.SWCodi();
+            this.SWcodiLabel = new System.Windows.Forms.Label();
+            this.appLauncher1 = new CustomUserControls.AppLauncher();
             this.SuspendLayout();
             // 
             // TitleLabel
             // 
             this.TitleLabel.AutoSize = true;
             this.TitleLabel.Font = new System.Drawing.Font("Yu Gothic UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TitleLabel.Location = new System.Drawing.Point(102, 70);
+            this.TitleLabel.Location = new System.Drawing.Point(60, 43);
             this.TitleLabel.Name = "TitleLabel";
             this.TitleLabel.Size = new System.Drawing.Size(222, 38);
             this.TitleLabel.TabIndex = 1;
@@ -54,7 +55,7 @@ namespace CustomControls
             // NumeroLabel
             // 
             this.NumeroLabel.AutoSize = true;
-            this.NumeroLabel.Location = new System.Drawing.Point(641, 87);
+            this.NumeroLabel.Location = new System.Drawing.Point(915, 62);
             this.NumeroLabel.Name = "NumeroLabel";
             this.NumeroLabel.Size = new System.Drawing.Size(58, 17);
             this.NumeroLabel.TabIndex = 4;
@@ -63,7 +64,7 @@ namespace CustomControls
             // TextLabel
             // 
             this.TextLabel.AutoSize = true;
-            this.TextLabel.Location = new System.Drawing.Point(653, 154);
+            this.TextLabel.Location = new System.Drawing.Point(927, 129);
             this.TextLabel.Name = "TextLabel";
             this.TextLabel.Size = new System.Drawing.Size(35, 17);
             this.TextLabel.TabIndex = 5;
@@ -72,7 +73,7 @@ namespace CustomControls
             // CodiLabel
             // 
             this.CodiLabel.AutoSize = true;
-            this.CodiLabel.Location = new System.Drawing.Point(653, 211);
+            this.CodiLabel.Location = new System.Drawing.Point(927, 186);
             this.CodiLabel.Name = "CodiLabel";
             this.CodiLabel.Size = new System.Drawing.Size(36, 17);
             this.CodiLabel.TabIndex = 6;
@@ -80,7 +81,7 @@ namespace CustomControls
             // 
             // ComplementariTxt
             // 
-            this.ComplementariTxt.Location = new System.Drawing.Point(382, 85);
+            this.ComplementariTxt.Location = new System.Drawing.Point(656, 60);
             this.ComplementariTxt.Name = "ComplementariTxt";
             this.ComplementariTxt.Size = new System.Drawing.Size(68, 22);
             this.ComplementariTxt.TabIndex = 7;
@@ -93,7 +94,7 @@ namespace CustomControls
             this.TextTxt.ControlComplementari = null;
             this.TextTxt.DadaPermesa = InheritedControls.SWTextbox.TipusDada.Numero;
             this.TextTxt.ForeColor = System.Drawing.Color.Gray;
-            this.TextTxt.Location = new System.Drawing.Point(472, 151);
+            this.TextTxt.Location = new System.Drawing.Point(746, 126);
             this.TextTxt.Name = "TextTxt";
             this.TextTxt.Placeholder = "Placeholder";
             this.TextTxt.Size = new System.Drawing.Size(100, 22);
@@ -108,7 +109,7 @@ namespace CustomControls
             this.CodiTxt.ControlComplementari = null;
             this.CodiTxt.DadaPermesa = InheritedControls.SWTextbox.TipusDada.Numero;
             this.CodiTxt.ForeColor = System.Drawing.Color.Gray;
-            this.CodiTxt.Location = new System.Drawing.Point(472, 211);
+            this.CodiTxt.Location = new System.Drawing.Point(746, 186);
             this.CodiTxt.Name = "CodiTxt";
             this.CodiTxt.Placeholder = "Placeholder";
             this.CodiTxt.Size = new System.Drawing.Size(100, 22);
@@ -123,7 +124,7 @@ namespace CustomControls
             this.NumeroTxt.ControlComplementari = null;
             this.NumeroTxt.DadaPermesa = InheritedControls.SWTextbox.TipusDada.Numero;
             this.NumeroTxt.ForeColor = System.Drawing.Color.Gray;
-            this.NumeroTxt.Location = new System.Drawing.Point(472, 84);
+            this.NumeroTxt.Location = new System.Drawing.Point(746, 59);
             this.NumeroTxt.Name = "NumeroTxt";
             this.NumeroTxt.Placeholder = "Placeholder";
             this.NumeroTxt.Size = new System.Drawing.Size(100, 22);
@@ -132,27 +133,39 @@ namespace CustomControls
             // 
             // swCodi1
             // 
-            this.swCodi1.Location = new System.Drawing.Point(109, 261);
+            this.swCodi1.Location = new System.Drawing.Point(41, 129);
             this.swCodi1.Name = "swCodi1";
-            this.swCodi1.Nivell = Controls.SWCodi.TipusNivell.GM;
+            this.swCodi1.Nivell = CustomUserControls.SWCodi.TipusNivell.GS;
             this.swCodi1.Requerit = true;
-            this.swCodi1.Size = new System.Drawing.Size(527, 111);
+            this.swCodi1.Size = new System.Drawing.Size(606, 87);
             this.swCodi1.TabIndex = 12;
+            // 
+            // SWcodiLabel
+            // 
+            this.SWcodiLabel.AutoSize = true;
+            this.SWcodiLabel.Location = new System.Drawing.Point(64, 109);
+            this.SWcodiLabel.Name = "SWcodiLabel";
+            this.SWcodiLabel.Size = new System.Drawing.Size(93, 17);
+            this.SWcodiLabel.TabIndex = 13;
+            this.SWcodiLabel.Text = "SWCodiLabel";
             // 
             // appLauncher1
             // 
-            this.appLauncher1.DadaPermesa = Controls.AppLauncher.TipusDada.Text;
-            this.appLauncher1.Location = new System.Drawing.Point(51, 151);
+            this.appLauncher1.Classe = "CustomControls";
+            this.appLauncher1.Desc = "HAH XD";
+            this.appLauncher1.Form = "frmCustomControls";
+            this.appLauncher1.Location = new System.Drawing.Point(67, 316);
             this.appLauncher1.Name = "appLauncher1";
-            this.appLauncher1.Size = new System.Drawing.Size(446, 202);
-            this.appLauncher1.TabIndex = 13;
+            this.appLauncher1.Size = new System.Drawing.Size(301, 88);
+            this.appLauncher1.TabIndex = 14;
             // 
             // frmCustomControls
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1087, 521);
             this.Controls.Add(this.appLauncher1);
+            this.Controls.Add(this.SWcodiLabel);
             this.Controls.Add(this.swCodi1);
             this.Controls.Add(this.TextTxt);
             this.Controls.Add(this.CodiTxt);
@@ -178,8 +191,9 @@ namespace CustomControls
         private InheritedControls.SWTextbox NumeroTxt;
         private InheritedControls.SWTextbox CodiTxt;
         private InheritedControls.SWTextbox TextTxt;
-        private Controls.SWCodi swCodi1;
-        private Controls.AppLauncher appLauncher1;
+        private CustomUserControls.SWCodi swCodi1;
+        private System.Windows.Forms.Label SWcodiLabel;
+        private CustomUserControls.AppLauncher appLauncher1;
     }
 }
 

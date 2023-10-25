@@ -61,6 +61,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dades.Designer.cs">
+      <DependentUpon>Dades.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmCustomControls.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +75,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Dades.resx">
+      <DependentUpon>Dades.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmCustomControls.resx">
       <DependentUpon>frmCustomControls.cs</DependentUpon>
     </EmbeddedResource>
@@ -95,9 +104,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Controls\Controls.csproj">
-      <Project>{6ca76af5-137d-44d0-9ad3-e130563551f2}</Project>
-      <Name>Controls</Name>
+    <ProjectReference Include="..\CustomUserControls\CustomUserControls.csproj">
+      <Project>{282ba00b-628c-455b-a1fd-6806dd0b206c}</Project>
+      <Name>CustomUserControls</Name>
     </ProjectReference>
     <ProjectReference Include="..\InheritedControls\InheritedControls.csproj">
       <Project>{b11b7b1c-5e3e-42d4-a944-a2f147f7e5cc}</Project>

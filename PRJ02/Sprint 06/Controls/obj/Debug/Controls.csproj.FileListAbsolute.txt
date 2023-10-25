@@ -6,3 +6,4 @@ C:\Github\S2AM\PRJ02\Sprint 06\Controls\obj\Debug\Controls.csproj.CoreCompileInp
 C:\Github\S2AM\PRJ02\Sprint 06\Controls\obj\Debug\Controls.dll
 C:\Github\S2AM\PRJ02\Sprint 06\Controls\obj\Debug\Controls.pdb
 C:\Github\S2AM\PRJ02\Sprint 06\Controls\obj\Debug\Controls.AppLauncher.resources
+C:\Github\S2AM\PRJ02\Sprint 06\Controls\obj\Debug\Controls.csproj.AssemblyReference.cache

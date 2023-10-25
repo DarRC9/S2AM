@@ -1,0 +1,9 @@
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\bin\Debug\CustomUserControls.dll
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\bin\Debug\CustomUserControls.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.SWCodi.resources
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.dll
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.AppLauncher.resources
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.csproj.AssemblyReference.cache

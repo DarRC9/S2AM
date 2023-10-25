@@ -11,5 +11,5 @@ C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\InheritedControls.dll
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\InheritedControls.pdb
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\obj\Debug\CustomControls.csproj.CopyComplete
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\obj\Debug\CustomControls.frmCustomControls.resources
-C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\Controls.dll
-C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\Controls.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\CustomUserControls.dll
+C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\CustomUserControls.pdb
