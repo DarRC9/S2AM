@@ -17,13 +17,17 @@ namespace InheritedControls
             InitializeComponent();
         }
 
+        private string TextInput;
+
         public bool CampBuit { get; set; } = true;
-        public bool ClauForanea { get; set; } = true;
+        public bool ClauForanea { get; set; } = false;
+
+        private string _Placeholder = "Placeholder";
 
         public string Placeholder
         {
-            get { return this.Text; }
-            set { this.Text = "Placeholder"; }
+            get { return _Placeholder; }
+            set { _Placeholder = value; }
         }
 
         public string ControlComplementariTxt;
@@ -31,7 +35,7 @@ namespace InheritedControls
         private void InitializeComponent()
         {
             this.SuspendLayout();
-            this.Text = "Placeholder";
+            this.Text = Placeholder;
             this.ForeColor = Color.Gray;
             this.BackColor = Color.LightGray;
             // 
@@ -73,69 +77,82 @@ namespace InheritedControls
 
             string input = this.Text;
             Regex rgx_txt = new Regex(@"^[a-zA-Z]+$");
-            Regex rgx_cod = new Regex(@"^[A-Z]{4}\\-\\d{3}\\/[13579][AEIOU]$");
             Regex rgx_num = new Regex(@"^-?\d+(\.\d+)?$");
+            Regex rgx_cod = new Regex(@"^[A-Z]{4}\\-\\d{3}\\/[13579][AEIOU]$");
+
+            bool verificat = false;
 
             if (!CampBuit && string.IsNullOrWhiteSpace(input))
             {
-                MessageBox.Show("Input is required.");
                 this.Focus();
                 return;
             } else if (input == "")
             {
-                BackColor = Color.White;
-                ForeColor = Color.Gray;
-                BackColor = Color.LightGray;
-                Text = Placeholder;
-                return;
-            }
-            else
-            {
-                bool verificat = false;
-                if (this.DadaPermesa.ToString() == "Numero")
-                {
-                    if (rgx_num.IsMatch(input))
-                    {
-                        verificat = true; 
-                    }
-
-                } else if(this.DadaPermesa.ToString() == "Text")
-                {
-                    if (rgx_txt.IsMatch(input))
-                    {
-                        verificat = true;
-                    }
-                } else if (this.DadaPermesa.ToString() == "Codi")
-                {
-                    if (rgx_cod.IsMatch(input))
-                    {
-                        verificat = true;
-                    }
-                }
-                if (!verificat)
-                {
-                    MessageBox.Show("Ha de ser de tipus " + this.DadaPermesa.ToString());
-                    this.Focus();
-                }
+                this.Text = this.Placeholder;
                 this.BackColor = Color.White;
-            }
+                this.ForeColor = Color.Gray;
+                this.BackColor = Color.LightGray;
+                return;
+            } else if (!string.IsNullOrWhiteSpace(input) && this.DadaPermesa == TipusDada.Numero) 
+            {
+                if (rgx_num.IsMatch(input))
+                {
+                    verificat = true; 
+                } else
+                {
+                    verificat = false;
+                }
 
+            } else if(!string.IsNullOrWhiteSpace(input) && this.DadaPermesa == TipusDada.Text)
+            {
+                if (rgx_txt.IsMatch(input))
+                {
+                    verificat = true;
+                } else
+                {
+                    verificat = false;
+                }
+            } else if (!string.IsNullOrWhiteSpace(input) && this.DadaPermesa == TipusDada.Codi)
+            {
+                Console.WriteLine(input);
+                Console.WriteLine(rgx_cod);
+                if (rgx_cod.IsMatch(input))
+                {
+                    verificat = true;
+                } else
+                {
+                    verificat = false;
+                }
+            }
+                
+            if (!verificat)
+            {
+                this.Focus();
+            } else
+            {
+                this.TextInput = this.Text;
+            }
+            this.BackColor = Color.White;
 
             Form frm = this.FindForm();
 
             foreach (Control ctr in frm.Controls)
             {
-                if(ctr.Name == ControlComplementariTxt)
+                if (ctr.Name == ControlComplementariTxt && ClauForanea == true && verificat == true)
                 {
                     ctr.Text = this.Text;
                 }
             }
+                       
         }
         
 
         private void SWTextbox_Enter(object sender, EventArgs e)
         {
-            this.Text = "";
+            if (string.IsNullOrWhiteSpace(TextInput))
+            {
+                this.Text = "";
+            }
             this.BackColor = Color.LightCyan;
             this.ForeColor = Color.Black;
         }

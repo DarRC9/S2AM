@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,14 +18,22 @@ namespace CustomUserControls
         {
             InitializeComponent();
         }
+        
+        //private string projectDirectory = System.IO.Directory.GetCurrentDirectory();
+
+        //public string PicDir
+        //{
+        //    get { return projectDirectory; }
+        //    set { projectDirectory = value; }
+        //}
 
         public string Classe { get; set; } = "";
         public string Form { get; set; } = "";
         public string Desc { get; set; } = "";
+        
 
-        private void LaunchBtn_Click(object sender, EventArgs e)
+        private void AppLauncherLabel_Click(object sender, EventArgs e)
         {
-
             Assembly ensamblat = Assembly.LoadFrom(Classe + ".dll");
 
             Object dllBD;
@@ -34,11 +43,14 @@ namespace CustomUserControls
             dllBD = Activator.CreateInstance(tipus);
 
             Form frm = (Form)dllBD;
-
             frm.Text = Desc;
             frm.Show();
+        }
 
-
+        private void AppLauncher_Load(object sender, EventArgs e)
+        {
+            this.AppLauncherLabel.Text = this.Desc;
+            //this.FindForm().BackgroundImage = Image.FromFile(System.IO.File.ReadAllText(this.PicDir));
         }
     }
 }

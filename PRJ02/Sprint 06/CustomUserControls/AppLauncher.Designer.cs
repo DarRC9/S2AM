@@ -32,38 +32,43 @@ namespace CustomUserControls
             this.components = new System.ComponentModel.Container();
             this.AppLauncherLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LaunchBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // AppLauncherLabel
             // 
             this.AppLauncherLabel.AutoSize = true;
-            this.AppLauncherLabel.Location = new System.Drawing.Point(14, 14);
+            this.AppLauncherLabel.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AppLauncherLabel.Location = new System.Drawing.Point(150, 54);
             this.AppLauncherLabel.Name = "AppLauncherLabel";
-            this.AppLauncherLabel.Size = new System.Drawing.Size(97, 17);
+            this.AppLauncherLabel.Size = new System.Drawing.Size(124, 29);
             this.AppLauncherLabel.TabIndex = 0;
-            this.AppLauncherLabel.Text = "App Launcher";
+            this.AppLauncherLabel.Text = "Your Label";
+            this.AppLauncherLabel.Click += new System.EventHandler(this.AppLauncherLabel_Click);
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.LaunchBtn);
+            this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.AppLauncherLabel);
-            this.panel1.Location = new System.Drawing.Point(31, 16);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(239, 56);
+            this.panel1.Size = new System.Drawing.Size(316, 134);
             this.panel1.TabIndex = 1;
             // 
-            // LaunchBtn
+            // pictureBox1
             // 
-            this.LaunchBtn.Location = new System.Drawing.Point(141, 11);
-            this.LaunchBtn.Name = "LaunchBtn";
-            this.LaunchBtn.Size = new System.Drawing.Size(75, 23);
-            this.LaunchBtn.TabIndex = 1;
-            this.LaunchBtn.Text = "Launch";
-            this.LaunchBtn.UseVisualStyleBackColor = true;
-            this.LaunchBtn.Click += new System.EventHandler(this.LaunchBtn_Click);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::CustomUserControls.Properties.Resources.Snap__4_;
+            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(141, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.AppLauncherLabel_Click);
             // 
             // contextMenuStrip1
             // 
@@ -77,9 +82,11 @@ namespace CustomUserControls
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.Name = "AppLauncher";
-            this.Size = new System.Drawing.Size(301, 88);
+            this.Size = new System.Drawing.Size(323, 143);
+            this.Load += new System.EventHandler(this.AppLauncher_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -88,7 +95,7 @@ namespace CustomUserControls
 
         private System.Windows.Forms.Label AppLauncherLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button LaunchBtn;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

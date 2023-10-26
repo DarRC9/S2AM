@@ -19,11 +19,6 @@ namespace CustomControls
             InitializeComponent();
         }
 
-        private void SWCodi_Leave(object sender, EventArgs e)
-        {
-
-        }
-
 
 
         //private void TextTxt_Leave(object sender, EventArgs e)

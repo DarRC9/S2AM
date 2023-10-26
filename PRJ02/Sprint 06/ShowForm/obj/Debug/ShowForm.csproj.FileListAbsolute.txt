@@ -1,0 +1,7 @@
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\bin\Debug\ShowForm.dll
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\bin\Debug\ShowForm.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\obj\Debug\ShowForm.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\obj\Debug\ShowForm.dll
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\obj\Debug\ShowForm.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\obj\Debug\ShowForm.FormToShow.resources
+C:\Github\S2AM\PRJ02\Sprint 06\ShowForm\obj\Debug\ShowForm.csproj.GenerateResource.cache

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InheritedControls", "..\Inh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomUserControls", "..\CustomUserControls\CustomUserControls.csproj", "{282BA00B-628C-455B-A1FD-6806DD0B206C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShowForm", "..\ShowForm\ShowForm.csproj", "{D88FBBE3-7B47-436C-9FD1-A213914501FE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{282BA00B-628C-455B-A1FD-6806DD0B206C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{282BA00B-628C-455B-A1FD-6806DD0B206C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{282BA00B-628C-455B-A1FD-6806DD0B206C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D88FBBE3-7B47-436C-9FD1-A213914501FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D88FBBE3-7B47-436C-9FD1-A213914501FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D88FBBE3-7B47-436C-9FD1-A213914501FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D88FBBE3-7B47-436C-9FD1-A213914501FE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

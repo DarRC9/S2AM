@@ -6,4 +6,4 @@ C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.c
 C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.dll
 C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.pdb
 C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.AppLauncher.resources
-C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 06\CustomUserControls\obj\Debug\CustomUserControls.Properties.Resources.resources

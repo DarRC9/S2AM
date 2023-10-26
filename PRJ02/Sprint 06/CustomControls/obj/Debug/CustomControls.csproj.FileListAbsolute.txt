@@ -13,3 +13,6 @@ C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\obj\Debug\CustomControls.csproj.Co
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\obj\Debug\CustomControls.frmCustomControls.resources
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\CustomUserControls.dll
 C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\CustomUserControls.pdb
+C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\obj\Debug\CustomControls.Dades.resources
+C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\ShowForm.dll
+C:\Github\S2AM\PRJ02\Sprint 06\CustomControls\bin\Debug\ShowForm.pdb
