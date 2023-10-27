@@ -1,0 +1,9 @@
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\bin\Debug\DataAcces.exe.config
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\bin\Debug\DataAcces.exe
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\bin\Debug\DataAcces.pdb
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.exe
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.pdb
+C:\Github\S2AM\PRJ02\Sprint 07\DataAcces\obj\Debug\DataAcces.frmADO.resources
