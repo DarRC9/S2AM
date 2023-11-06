@@ -1,19 +1,13 @@
-// import 'package:example/sources/conditional_fields.dart';
-// import 'package:example/sources/dynamic_fields.dart';
-// import 'package:example/sources/related_fields.dart';
-import 'package:first_form_app/sources/first_try.dart';
+import 'package:first_form_app/sources/speed_form.dart';
+import 'package:first_form_app/sources/stepper_form.dart';
+import 'package:first_form_app/sources/fast_form.dart';
+import 'package:first_form_app/sources/custom_form.dart';
 
-import 'sources/conditional_fields.dart';
-import 'sources/dynamic_fields.dart';
-import 'sources/related_fields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:form_builder_validators/form_builder_validators.dart';
 
 import 'code_page.dart';
-import 'sources/complete_form.dart';
-import 'sources/custom_fields.dart';
-import 'sources/signup_form.dart';
 
 void main() => runApp(const MyApp());
 
@@ -22,16 +16,21 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Flutter FormBuilder Demo',
+    return MaterialApp(
+      title: 'Flutter Dario Rua',
       debugShowCheckedModeBanner: false,
-      localizationsDelegates: [
+      theme: ThemeData(
+          primarySwatch: Colors.deepPurple,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.deepPurple,
+          )),
+      localizationsDelegates: const [
         FormBuilderLocalizations.delegate,
         ...GlobalMaterialLocalizations.delegates,
         GlobalWidgetsLocalizations.delegate,
       ],
       supportedLocales: FormBuilderLocalizations.supportedLocales,
-      home: _HomePage(),
+      home: const _HomePage(),
     );
   }
 }
@@ -42,19 +41,19 @@ class _HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CodePage(
-      title: 'Flutter Form Builder',
+      title: 'Dario Rua S2AM',
       child: ListView(
         children: <Widget>[
           ListTile(
-            title: const Text('Complete Form'),
+            title: const Text('Speed Form'),
             trailing: const Icon(Icons.arrow_right_sharp),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
                     return const CodePage(
-                      title: 'Complete Form',
-                      child: CompleteForm(),
+                      title: 'Speed Form Dario Rua',
+                      child: SpeedForm(),
                     );
                   },
                 ),
@@ -63,15 +62,15 @@ class _HomePage extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text('Custom Fields'),
+            title: const Text('Stepper Form'),
             trailing: const Icon(Icons.arrow_right_sharp),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
                     return const CodePage(
-                      title: 'Custom Fields',
-                      child: CustomFields(),
+                      title: 'Stepper Form Dario Rua',
+                      child: StepperForm(),
                     );
                   },
                 ),
@@ -80,15 +79,15 @@ class _HomePage extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text('Signup Form'),
+            title: const Text('Fast Form'),
             trailing: const Icon(Icons.arrow_right_sharp),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
                     return const CodePage(
-                      title: 'Signup Form',
-                      child: SignupForm(),
+                      title: 'Fast Form Dario Rua',
+                      child: FastForm(),
                     );
                   },
                 ),
@@ -97,72 +96,21 @@ class _HomePage extends StatelessWidget {
           ),
           const Divider(),
           ListTile(
-            title: const Text('Dynamic Form'),
+            title: const Text('Custom Form'),
             trailing: const Icon(Icons.arrow_right_sharp),
             onTap: () {
               Navigator.of(context).push(
                 MaterialPageRoute(
                   builder: (context) {
                     return const CodePage(
-                      title: 'Dynamic Form',
-                      child: DynamicFields(),
+                      title: 'Custom Form Dario Rua',
+                      child: MediaListForm(),
                     );
                   },
                 ),
               );
             },
           ),
-          const Divider(),
-          ListTile(
-            title: const Text('Conditional Form'),
-            trailing: const Icon(Icons.arrow_right_sharp),
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) {
-                    return const CodePage(
-                      title: 'Conditional Form',
-                      child: ConditionalFields(),
-                    );
-                  },
-                ),
-              );
-            },
-          ),
-          const Divider(),
-          ListTile(
-            title: const Text('Related Fields'),
-            trailing: const Icon(Icons.arrow_right_sharp),
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) {
-                    return const CodePage(
-                      title: 'Related Fields',
-                      child: RelatedFields(),
-                    );
-                  },
-                ),
-              );
-            },
-          ),
-          const Divider(),
-          ListTile(
-            title: const Text('1st try'),
-            trailing: const Icon(Icons.arrow_right_sharp),
-            onTap: () {
-              Navigator.of(context).push(
-                MaterialPageRoute(
-                  builder: (context) {
-                    return const CodePage(
-                      title: '1st try',
-                      child: firstTry(),
-                    );
-                  },
-                ),
-              );
-            },
-          )
         ],
       ),
     );
