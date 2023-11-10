@@ -1,0 +1,13 @@
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\TestClasses.exe.config
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\TestClasses.exe
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\TestClasses.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\ADOPractica.dll
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\bin\Debug\ADOPractica.dll.config
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.exe
+C:\Github\S2AM\PRJ02\Sprint 08\TestClasses\obj\Debug\TestClasses.pdb

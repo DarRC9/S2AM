@@ -1,2 +1,0 @@
-C:\Github\S2AM\PRJ02\Sprint 08\FormBaseClassLibrary\obj\Debug\FormBaseClassLibrary.csproj.AssemblyReference.cache
-C:\Github\S2AM\PRJ02\Sprint 08\FormBaseClassLibrary\obj\Debug\FormBaseClassLibrary.csproj.CoreCompileInputs.cache

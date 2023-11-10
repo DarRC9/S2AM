@@ -1,5 +1,0 @@
-C:\Github\S2AM\PRJ02\Sprint 08\FormExample\obj\Debug\FormExample.csproj.AssemblyReference.cache
-C:\Github\S2AM\PRJ02\Sprint 08\FormExample\obj\Debug\FormExample.Form1.resources
-C:\Github\S2AM\PRJ02\Sprint 08\FormExample\obj\Debug\FormExample.Properties.Resources.resources
-C:\Github\S2AM\PRJ02\Sprint 08\FormExample\obj\Debug\FormExample.csproj.GenerateResource.cache
-C:\Github\S2AM\PRJ02\Sprint 08\FormExample\obj\Debug\FormExample.csproj.CoreCompileInputs.cache
