@@ -1,0 +1,149 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "first_form_app",
+            "cwd": "M08\\first_form_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "first_form_app (profile mode)",
+            "cwd": "M08\\first_form_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "first_form_app (release mode)",
+            "cwd": "M08\\first_form_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "form_sample_m",
+            "cwd": "M08\\form_sample_m",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "form_sample_m (profile mode)",
+            "cwd": "M08\\form_sample_m",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "form_sample_m (release mode)",
+            "cwd": "M08\\form_sample_m",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "genshin_api_app",
+            "cwd": "M08\\genshin_api_app",          
+            "request": "launch",
+            "type": "dart",
+
+        },
+        {
+            "name": "genshin_api_app (profile mode)",
+            "cwd": "M08\\genshin_api_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "genshin_api_app (release mode)",
+            "cwd": "M08\\genshin_api_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "helloworld_app",
+            "cwd": "M08\\helloworld_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "helloworld_app (profile mode)",
+            "cwd": "M08\\helloworld_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "helloworld_app (release mode)",
+            "cwd": "M08\\helloworld_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "input_dialog_app",
+            "cwd": "M08\\input_dialog_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "input_dialog_app (profile mode)",
+            "cwd": "M08\\input_dialog_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "input_dialog_app (release mode)",
+            "cwd": "M08\\input_dialog_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "layout_app",
+            "cwd": "M08\\layout_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "layout_app (profile mode)",
+            "cwd": "M08\\layout_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "layout_app (release mode)",
+            "cwd": "M08\\layout_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        },
+        {
+            "name": "m_app",
+            "cwd": "M08\\m_app",
+            "request": "launch",
+            "type": "dart"
+        },
+        {
+            "name": "m_app (profile mode)",
+            "cwd": "M08\\m_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "profile"
+        },
+        {
+            "name": "m_app (release mode)",
+            "cwd": "M08\\m_app",
+            "request": "launch",
+            "type": "dart",
+            "flutterMode": "release"
+        }
+    ]
+}

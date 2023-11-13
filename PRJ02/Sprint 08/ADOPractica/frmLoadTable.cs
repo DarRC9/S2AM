@@ -13,22 +13,19 @@ namespace ADOPractica
 {
     public abstract partial class frmLoadTable : Form
     {
-        public frmLoadTable()
-        {
-            InitializeComponent();
-        }
-
-        #region Global Variables
-
+        
         private SqlConnection _sqlConnection;
         private string _query;
         private DataSet _dataSet;
         private bool _isNew;
         private string _tableToLoad;
         private string _connectionString;
-        #endregion
 
-        #region Methods
+        public frmLoadTable()
+        {
+            InitializeComponent();
+        }
+
 
         public void SetTableName(string tableName)
         {
@@ -148,7 +145,6 @@ namespace ADOPractica
 
         /*-------------------------------*/
 
-        #endregion
  
 
     }

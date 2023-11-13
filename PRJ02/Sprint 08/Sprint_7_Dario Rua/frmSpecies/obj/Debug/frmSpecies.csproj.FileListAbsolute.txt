@@ -1,0 +1,15 @@
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.frmSpecies.resources
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\frmSpecies.exe.config
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\frmSpecies.exe
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\frmSpecies.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\ADOPractica.dll
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\ADOPractica.dll.config
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\bin\Debug\ADOPractica.exe.config
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.exe
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\frmSpecies\obj\Debug\frmSpecies.pdb

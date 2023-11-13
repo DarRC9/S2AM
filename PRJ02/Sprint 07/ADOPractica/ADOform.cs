@@ -53,7 +53,7 @@ namespace ADOPractica
             conn.Close();
 
             dtgSpecies.Columns[0].Visible = false;
-            dtgSpecies.Columns[].HeaderText = "Species Code";
+            dtgSpecies.Columns[1].HeaderText = "Species Code";
             dtgSpecies.Columns[2].HeaderText = "Species Description";
         }
 
