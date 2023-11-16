@@ -1,0 +1,13 @@
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.frmDataAccesBase.resources
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\bin\Debug\DataAccesBase.exe.config
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\bin\Debug\DataAccesBase.exe
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\bin\Debug\DataAccesBase.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\bin\Debug\DataAccesComponent.dll
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\bin\Debug\DataAccesComponent.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.exe
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesBase\obj\Debug\DataAccesBase.pdb

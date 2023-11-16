@@ -1,0 +1,5 @@
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesComponent\obj\Debug\DataAccesComponent.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesComponent\bin\Debug\DataAccesComponent.dll
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesComponent\bin\Debug\DataAccesComponent.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesComponent\obj\Debug\DataAccesComponent.dll
+C:\Github\S2AM\PRJ02\Sprint 09\DataAccesComponent\obj\Debug\DataAccesComponent.pdb

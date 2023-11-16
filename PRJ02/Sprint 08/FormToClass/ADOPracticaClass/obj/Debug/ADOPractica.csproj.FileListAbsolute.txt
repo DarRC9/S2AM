@@ -1,0 +1,19 @@
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\bin\Debug\ADOPractica.exe.config
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\bin\Debug\ADOPractica.exe
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\bin\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.ADOform.resources
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.exe
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 07\ADOPractica\obj\Debug\ADOPractica.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\bin\Debug\ADOPractica.dll.config
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\bin\Debug\ADOPractica.dll
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\bin\Debug\ADOPractica.pdb
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.dll
+C:\Github\S2AM\PRJ02\Sprint 08\Sprint_7_Dario Rua\ADOPractica\obj\Debug\ADOPractica.ADOformClass.resources

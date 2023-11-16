@@ -1,0 +1,21 @@
+C:\Users\josep\source\repos\PracticaExcepcions\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaExcepcions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.pdb
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.csproj.AssemblyReference.cache
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.csproj.CoreCompileInputs.cache
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.dll
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.pdb
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.dll
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\ExcepcionsClimatiques\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.dll
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\ExcepcionsClimatiques\obj\Debug\ExcepcionsClimatiques.pdb

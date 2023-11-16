@@ -1,0 +1,52 @@
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe.config
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\bin\Debug\PracticaExcepcions.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.Properties.Resources.resources
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.GenerateResource.cache
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.exe
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CopyComplete
+C:\Users\josep\source\repos\PracticaExcepcions\PracticaExcepcions\obj\Debug\PracticaExcepcions.frmClima.resources
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe.config
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.frmClima.resources
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.Properties.Resources.resources
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.GenerateResource.cache
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CopyComplete
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.exe
+C:\Users\josep\source\repos\PracticaExcepcions\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.pdb
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe.config
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\bin\Debug\PracticaExcepcions.pdb
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.dll
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.AssemblyReference.cache
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.frmClima.resources
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.Properties.Resources.resources
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.GenerateResource.cache
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CoreCompileInputs.cache
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CopyComplete
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.exe
+C:\Users\dario.rua\Downloads\Enunciat\Enunciat\PracticaExcepcions\obj\Debug\PracticaExcepcions.pdb
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe.config
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\bin\Debug\PracticaExcepcions.exe
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\bin\Debug\PracticaExcepcions.pdb
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.dll
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\bin\Debug\ExcepcionsClimatiques.pdb
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.frmClima.resources
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.exe
+C:\Github\S2AM\PRJ02\Sprint 10\Exceptions\PracticaExcepcions\obj\Debug\PracticaExcepcions.pdb

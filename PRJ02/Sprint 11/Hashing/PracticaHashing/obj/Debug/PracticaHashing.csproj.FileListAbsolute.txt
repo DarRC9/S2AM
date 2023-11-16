@@ -1,0 +1,39 @@
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\bin\Debug\PracticaHashing.exe.config
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\bin\Debug\PracticaHashing.exe
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\bin\Debug\PracticaHashing.pdb
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\bin\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\bin\Debug\HashUtils.pdb
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.frmHashing.resources
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.Properties.Resources.resources
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.GenerateResource.cache
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.CopyComplete
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.exe
+C:\Users\josep\source\repos\PracticaHashing\PracticaHashing\obj\Debug\PracticaHashing.pdb
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\bin\Debug\PracticaHashing.exe.config
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\bin\Debug\PracticaHashing.exe
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\bin\Debug\PracticaHashing.pdb
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\bin\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\bin\Debug\HashUtils.pdb
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.frmHashing.resources
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.Properties.Resources.resources
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.csproj.GenerateResource.cache
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.csproj.CopyComplete
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.exe
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\PracticaHashing\obj\Debug\PracticaHashing.pdb
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\bin\Debug\PracticaHashing.exe.config
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\bin\Debug\PracticaHashing.exe
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\bin\Debug\PracticaHashing.pdb
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\bin\Debug\HashUtils.dll
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\bin\Debug\HashUtils.pdb
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.frmHashing.resources
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.exe
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\PracticaHashing\obj\Debug\PracticaHashing.pdb

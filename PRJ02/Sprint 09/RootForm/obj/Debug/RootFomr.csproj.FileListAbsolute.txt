@@ -1,0 +1,13 @@
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\bin\Debug\DataAccesRoot.exe.config
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\bin\Debug\DataAccesRoot.exe
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\bin\Debug\DataAccesRoot.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\bin\Debug\DataAccesComponent.dll
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\bin\Debug\DataAccesComponent.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\RootFomr.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\DataAccesRoot.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\RootForm.RootForm.resources
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\RootFomr.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\RootFomr.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\RootFomr.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\DataAccesRoot.exe
+C:\Github\S2AM\PRJ02\Sprint 09\RootForm\obj\Debug\DataAccesRoot.pdb

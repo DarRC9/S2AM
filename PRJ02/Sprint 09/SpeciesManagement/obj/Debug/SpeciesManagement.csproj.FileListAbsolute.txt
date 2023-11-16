@@ -1,0 +1,16 @@
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\SpeciesManagement.exe.config
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\SpeciesManagement.exe
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\SpeciesManagement.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.Properties.Resources.resources
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.exe
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\DataAccesComponent.dll
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\DataAccesComponent.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.csproj.CopyComplete
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\DataAccesBase.exe
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\DataAccesBase.pdb
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\bin\Debug\DataAccesBase.exe.config
+C:\Github\S2AM\PRJ02\Sprint 09\SpeciesManagement\obj\Debug\SpeciesManagement.SpeciesForm.resources

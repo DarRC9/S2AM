@@ -1,0 +1,17 @@
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\bin\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\bin\Debug\HashUtils.pdb
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\obj\Debug\HashUtils.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\obj\Debug\HashUtils.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\obj\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\HashUtils\obj\Debug\HashUtils.pdb
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\bin\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\bin\Debug\HashUtils.pdb
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\obj\Debug\HashUtils.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\obj\Debug\HashUtils.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\obj\Debug\HashUtils.dll
+C:\Users\josep\source\repos\PracticaHashing\Enunciat\HashUtils\obj\Debug\HashUtils.pdb
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\HashUtils\bin\Debug\HashUtils.dll
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\HashUtils\bin\Debug\HashUtils.pdb
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\HashUtils\obj\Debug\HashUtils.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\HashUtils\obj\Debug\HashUtils.dll
+C:\Github\S2AM\PRJ02\Sprint 11\Hashing\HashUtils\obj\Debug\HashUtils.pdb
