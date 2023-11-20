@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'get_character.dart';
 import 'character_card.dart';
 import 'add_character.dart';
+import 'favorite_page.dart';
+import 'character_detail_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -74,11 +76,11 @@ class _MyHomePageState extends State<MyHomePage> {
         final characterData = await character.fetchCharacterData(characterName);
         final characterImageUrl =
             await character.fetchCharacterImageUrl(characterName);
-
         setState(() {
           characterList.add({
             'data': characterData,
             'image': characterImageUrl,
+            'favorite': false,
           });
         });
       }
@@ -101,7 +103,7 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text("Genshin Impact API"),
         actions: [
           Padding(
-            padding: const EdgeInsets.only(right: 20.0), // Add left padding
+            padding: const EdgeInsets.only(right: 20.0),
             child: IconButton(
               icon: const Icon(Icons.add, color: Colors.white),
               onPressed: () => addCharacter.showAddCharacterDialog(
@@ -110,6 +112,18 @@ class _MyHomePageState extends State<MyHomePage> {
                   characterList,
                   setState),
             ),
+          ),
+          IconButton(
+            icon: const Icon(Icons.favorite, color: Colors.white),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) =>
+                      FavoritePage(characterList, visionColorMap),
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -124,45 +138,58 @@ class _MyHomePageState extends State<MyHomePage> {
                       final characterData = characterList[index]['data'];
                       final characterImageUrl = characterList[index]['image'];
 
-                      return Dismissible(
-                        key: Key(characterData['name']),
-                        onDismissed: (direction) {
-                          if (direction == DismissDirection.startToEnd) {
-                            // Slide to the right (start to end) - Mark as favorite
-                            // Implement your logic to handle marking as favorite
-                          } else if (direction == DismissDirection.endToStart) {
-                            // Slide to the left (end to start) - Remove the card
-                            setState(() {
-                              characterList.removeAt(index);
-                            });
-                          }
+                      return GestureDetector(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => CharacterDetailPage(
+                                characterData: characterData,
+                                characterImageUrl: characterImageUrl,
+                              ),
+                            ),
+                          );
                         },
-                        background: Container(
-                          color: Colors
-                              .green, // Background color when sliding right (favorite)
-                          alignment: Alignment.centerLeft,
-                          padding: const EdgeInsets.all(16),
-                          child: const Icon(
-                            Icons.favorite,
-                            color: Colors.white,
+                        child: Dismissible(
+                          key: Key(characterData['name']),
+                          onDismissed: (direction) {
+                            if (direction == DismissDirection.startToEnd) {
+                              setState(() {
+                                characterList[index]['favorite'] = true;
+                              });
+                            } else if (direction ==
+                                DismissDirection.endToStart) {
+                              Future.delayed(
+                                  const Duration(milliseconds: 10000), () {
+                                setState(() {
+                                  characterList.removeAt(index);
+                                });
+                              });
+                            }
+                          },
+                          background: Container(
+                            color: const Color.fromARGB(255, 51, 116, 53),
+                            alignment: Alignment.centerLeft,
+                            padding: const EdgeInsets.all(16),
+                            child: const Icon(
+                              Icons.favorite,
+                              color: Colors.white,
+                            ),
                           ),
-                        ),
-                        secondaryBackground: Container(
-                          color: Colors
-                              .red, // Background color when sliding left (remove)
-                          alignment: Alignment.centerRight,
-                          padding: const EdgeInsets.all(16),
-                          child: const Icon(
-                            Icons.delete,
-                            color: Colors.white,
+                          secondaryBackground: Container(
+                            color: const Color.fromARGB(255, 177, 47, 38),
+                            alignment: Alignment.centerRight,
+                            padding: const EdgeInsets.all(16),
+                            child: const Icon(
+                              Icons.delete,
+                              color: Colors.white,
+                            ),
                           ),
-                        ),
-                        child: CharacterCard(
-                          characterData: characterData,
-                          characterImageUrl: characterImageUrl,
-                          visionColorMap: visionColorMap,
-                          isFavorite:
-                              false, // Pass whether it's a favorite to the CharacterCard
+                          child: CharacterCard(
+                            characterData: characterData,
+                            characterImageUrl: characterImageUrl,
+                            visionColorMap: visionColorMap,
+                          ),
                         ),
                       );
                     },

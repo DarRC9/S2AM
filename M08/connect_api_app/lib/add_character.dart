@@ -22,6 +22,7 @@ class AddCharacter {
         });
       });
     } catch (e) {
+      // ignore: use_build_context_synchronously
       showErrorDialog(context, "Character not found");
     }
   }
@@ -32,14 +33,14 @@ class AddCharacter {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Error'),
+          title: const Text('Error'),
           content: Text(errorMessage),
           actions: [
             TextButton(
               onPressed: () {
                 Navigator.of(context).pop(); // Close the dialog
               },
-              child: Text('OK'),
+              child: const Text('OK'),
             ),
           ],
         );
@@ -56,14 +57,14 @@ class AddCharacter {
       context: context,
       builder: (BuildContext context) {
         return AlertDialog(
-          title: Text('Add Character'),
+          title: const Text('Add Character'),
           content: Column(
             children: [
               TextField(
                 controller: newCharacterController,
-                decoration: InputDecoration(labelText: 'Character Name'),
+                decoration: const InputDecoration(labelText: 'Character Name'),
               ),
-              SizedBox(height: 16),
+              const SizedBox(height: 16),
               ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pop(); // Close the dialog
@@ -71,7 +72,7 @@ class AddCharacter {
                       newCharacterController.text, characterList, setState);
                   newCharacterController.clear();
                 },
-                child: Text('Add'),
+                child: const Text('Add'),
               ),
             ],
           ),

@@ -16,6 +16,13 @@ class Character {
           'vision': responseData['vision'],
           'nation': responseData['nation'],
           'name': responseData['name'],
+          'title': responseData['title'], // Add new fields here
+          'affiliation': responseData['affiliation'],
+          'rarity': responseData['rarity'],
+          'release': responseData['release'],
+          'constellation': responseData['constellation'],
+          'birthday': responseData['birthday'],
+          'description': responseData['description'],
         };
       } else {
         throw Exception(

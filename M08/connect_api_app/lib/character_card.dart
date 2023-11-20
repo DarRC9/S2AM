@@ -4,14 +4,12 @@ class CharacterCard extends StatelessWidget {
   final Map<String, dynamic> characterData;
   final String characterImageUrl;
   final Map<String, Color> visionColorMap;
-  final bool isFavorite;
 
   const CharacterCard({
     Key? key,
     required this.characterData,
     required this.characterImageUrl,
     required this.visionColorMap,
-    this.isFavorite = false,
   }) : super(key: key);
 
   @override
@@ -54,13 +52,6 @@ class CharacterCard extends StatelessWidget {
               ),
             ),
             const Spacer(), // Add this Spacer to push the heart icon to the right
-
-            isFavorite
-                ? const Icon(
-                    Icons.favorite,
-                    color: Colors.red,
-                  )
-                : const SizedBox(),
           ],
         ),
       ),
