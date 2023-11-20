@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
 import 'get_character.dart';
+import 'character_card.dart';
+import 'add_character.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage(),
+      home: const MyHomePage(),
       theme: ThemeData(
         scaffoldBackgroundColor: Colors.grey[900],
         appBarTheme: const AppBarTheme(
-          color: Colors.teal,
+          color: Color.fromARGB(255, 56, 56, 56),
         ),
       ),
     );
@@ -21,6 +25,8 @@ class MyApp extends StatelessWidget {
 }
 
 class MyHomePage extends StatefulWidget {
+  const MyHomePage({super.key});
+
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
@@ -29,6 +35,7 @@ class _MyHomePageState extends State<MyHomePage> {
   List<Map<String, dynamic>> characterList = [];
   bool isLoading = true;
   String error = '';
+  TextEditingController newCharacterController = TextEditingController();
 
   Map<String, Color> visionColorMap = {
     'Electro': Colors.purple,
@@ -40,9 +47,12 @@ class _MyHomePageState extends State<MyHomePage> {
     'Dendro': Colors.green,
   };
 
+  late AddCharacter addCharacter; // Declare an instance of AddCharacter
+
   @override
   void initState() {
     super.initState();
+    addCharacter = AddCharacter(context); // Initialize the instance
     fetchCharacterData();
   }
 
@@ -88,7 +98,20 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Genshin Impact API Example"),
+        title: const Text("Genshin Impact API"),
+        actions: [
+          Padding(
+            padding: const EdgeInsets.only(right: 20.0), // Add left padding
+            child: IconButton(
+              icon: const Icon(Icons.add, color: Colors.white),
+              onPressed: () => addCharacter.showAddCharacterDialog(
+                  newCharacterController,
+                  addCharacter.addCharacter,
+                  characterList,
+                  setState),
+            ),
+          ),
+        ],
       ),
       body: Center(
         child: isLoading
@@ -100,47 +123,46 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemBuilder: (context, index) {
                       final characterData = characterList[index]['data'];
                       final characterImageUrl = characterList[index]['image'];
-                      final vision = characterData['vision'];
 
-                      return Card(
-                        margin: const EdgeInsets.all(10),
-                        color: Colors.grey[800],
-                        child: Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            children: [
-                              ClipRRect(
-                                borderRadius: BorderRadius.circular(15),
-                                child: Image.network(
-                                  characterImageUrl,
-                                  height: 100,
-                                  width: 100,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              const SizedBox(width: 10),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      "${characterData['name']}",
-                                      style: TextStyle(
-                                        color: visionColorMap[vision],
-                                        fontWeight: FontWeight.bold,
-                                      ),
-                                    ),
-                                    Text("Vision: $vision",
-                                        style: TextStyle(
-                                            color: visionColorMap[vision])),
-                                    Text("Nation: ${characterData['nation']}",
-                                        style: const TextStyle(
-                                            color: Colors.white)),
-                                  ],
-                                ),
-                              ),
-                            ],
+                      return Dismissible(
+                        key: Key(characterData['name']),
+                        onDismissed: (direction) {
+                          if (direction == DismissDirection.startToEnd) {
+                            // Slide to the right (start to end) - Mark as favorite
+                            // Implement your logic to handle marking as favorite
+                          } else if (direction == DismissDirection.endToStart) {
+                            // Slide to the left (end to start) - Remove the card
+                            setState(() {
+                              characterList.removeAt(index);
+                            });
+                          }
+                        },
+                        background: Container(
+                          color: Colors
+                              .green, // Background color when sliding right (favorite)
+                          alignment: Alignment.centerLeft,
+                          padding: const EdgeInsets.all(16),
+                          child: const Icon(
+                            Icons.favorite,
+                            color: Colors.white,
                           ),
+                        ),
+                        secondaryBackground: Container(
+                          color: Colors
+                              .red, // Background color when sliding left (remove)
+                          alignment: Alignment.centerRight,
+                          padding: const EdgeInsets.all(16),
+                          child: const Icon(
+                            Icons.delete,
+                            color: Colors.white,
+                          ),
+                        ),
+                        child: CharacterCard(
+                          characterData: characterData,
+                          characterImageUrl: characterImageUrl,
+                          visionColorMap: visionColorMap,
+                          isFavorite:
+                              false, // Pass whether it's a favorite to the CharacterCard
                         ),
                       );
                     },

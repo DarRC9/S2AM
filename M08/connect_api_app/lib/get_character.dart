@@ -1,10 +1,11 @@
-// api_service.dart
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 class Character {
+  static const String baseUrl = "https://genshin.jmp.blue/characters/";
+
   Future<Map<String, dynamic>> fetchCharacterData(String characterName) async {
-    final String apiUrl = "https://genshin.jmp.blue/characters/$characterName";
+    final String apiUrl = "$baseUrl$characterName";
 
     try {
       final response = await http.get(Uri.parse(apiUrl));
@@ -17,16 +18,16 @@ class Character {
           'name': responseData['name'],
         };
       } else {
-        throw Exception("Error: ${response.statusCode}");
+        throw Exception(
+            "Failed to fetch character data: ${response.statusCode}");
       }
     } catch (e) {
-      throw Exception("Error: $e");
+      throw Exception("Error during character data request: $e");
     }
   }
 
   Future<String> fetchCharacterImageUrl(String characterName) async {
-    final String imageUrl =
-        "https://genshin.jmp.blue/characters/$characterName/card";
+    final String imageUrl = "$baseUrl$characterName/card";
 
     try {
       final response = await http.get(Uri.parse(imageUrl));
@@ -34,10 +35,11 @@ class Character {
       if (response.statusCode == 200) {
         return imageUrl;
       } else {
-        throw Exception("Error fetching image: ${response.statusCode}");
+        throw Exception(
+            "Failed to fetch character image: ${response.statusCode}");
       }
     } catch (e) {
-      throw Exception("Error fetching image: $e");
+      throw Exception("Error during character image request: $e");
     }
   }
 }
