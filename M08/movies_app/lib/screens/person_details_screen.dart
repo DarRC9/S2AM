@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:movies_app/api/api.dart';
 import 'package:movies_app/api/api_service.dart';
-import 'package:movies_app/controllers/persons_controller.dart';
 import 'package:movies_app/models/person.dart';
 import 'package:movies_app/models/movie.dart';
+import 'package:movies_app/widgets/person_item.dart';
+import 'dart:math';
 
 class PersonDetailsScreen extends StatelessWidget {
   const PersonDetailsScreen({
@@ -14,10 +15,21 @@ class PersonDetailsScreen extends StatelessWidget {
   }) : super(key: key);
 
   final Person person;
+  static List<String> backgrounds = [
+    // "https://4kwallpapers.com/images/wallpapers/black-abstract-dark-3840x2160-9729.jpg",
+    "https://images.unsplash.com/photo-1669833593439-6db11b5bc570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80",
+    // "https://4kwallpapers.com/images/wallpapers/windows-11-stock-black-abstract-black-background-amoled-1242x2208-8971.jpg",
+  ];
+
+  String getRandomBackground() {
+    Random random = Random();
+    return backgrounds[random.nextInt(backgrounds.length)];
+  }
 
   @override
   Widget build(BuildContext context) {
     ApiService.getPersonMovies(person.id);
+    String backgroundUrl = getRandomBackground();
 
     return SafeArea(
       child: Scaffold(
@@ -39,7 +51,7 @@ class PersonDetailsScreen extends StatelessWidget {
                       ),
                     ),
                     const Text(
-                      'Person Detail',
+                      'Person Details',
                       style: TextStyle(
                         fontWeight: FontWeight.w400,
                         fontSize: 24,
@@ -47,9 +59,6 @@ class PersonDetailsScreen extends StatelessWidget {
                     ),
                   ],
                 ),
-              ),
-              const SizedBox(
-                height: 40,
               ),
               SizedBox(
                 height: 330,
@@ -61,7 +70,8 @@ class PersonDetailsScreen extends StatelessWidget {
                         bottomRight: Radius.circular(16),
                       ),
                       child: Image.network(
-                        Api.imageBaseUrl + person.profilePath,
+                        // Api.imageBaseUrl + person.profilePath,
+                        "https://images.unsplash.com/photo-1669833593439-6db11b5bc570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80",
                         width: Get.width,
                         height: 250,
                         fit: BoxFit.cover,
@@ -82,8 +92,8 @@ class PersonDetailsScreen extends StatelessWidget {
                           borderRadius: BorderRadius.circular(16),
                           child: Image.network(
                             Api.imageBaseUrl + person.profilePath,
-                            width: 110,
-                            height: 140,
+                            width: 120,
+                            height: 160,
                             fit: BoxFit.cover,
                           ),
                         ),
@@ -115,15 +125,12 @@ class PersonDetailsScreen extends StatelessWidget {
                         ),
                         child: Row(
                           children: [
-                            // You can use a placeholder for the rating icon
                             SvgPicture.asset('assets/Star.svg'),
-                            const SizedBox(
-                              width: 5,
-                            ),
-                            // Assuming the person doesn't have a rating
-                            const Text(
-                              'N/A',
-                              style: TextStyle(
+                            const SizedBox(width: 5),
+                            Text(
+                              person.popularity
+                                  .toString(), // Display the popularity rating
+                              style: const TextStyle(
                                 fontWeight: FontWeight.w400,
                                 color: Color(0xFFFF8700),
                               ),
@@ -135,120 +142,58 @@ class PersonDetailsScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              const SizedBox(
-                height: 25,
-              ),
-              Padding(
-                padding: const EdgeInsets.all(24),
-                child: DefaultTabController(
-                  length: 1,
+              const SizedBox(height: 20),
+              Container(
+                padding: const EdgeInsets.only(left: 30),
+                child: Align(
+                  alignment: Alignment.centerLeft,
                   child: Column(
-                    mainAxisSize: MainAxisSize.min,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const TabBar(
-                        indicatorWeight: 4,
-                        indicatorSize: TabBarIndicatorSize.label,
-                        indicatorColor: Color(
-                          0xFF3A3F47,
-                        ),
-                        tabs: [
-                          Tab(text: 'Movies & TV Shows'),
-                        ],
+                      const SizedBox(height: 10),
+                      Text(
+                        'Gender: ${(person.gender == 1 ? "Female" : "Male")}',
+                        style: const TextStyle(fontSize: 16),
                       ),
-                      SizedBox(
-                        height: 400,
-                        child: TabBarView(children: [
-                          FutureBuilder<List<Movie>?>(
-                            future: ApiService.getPersonMovies(person.id),
-                            builder: (_, snapshot) {
-                              if (snapshot.connectionState ==
-                                  ConnectionState.waiting) {
-                                return const Center(
-                                  child: CircularProgressIndicator(),
-                                );
-                              } else if (snapshot.hasError ||
-                                  !snapshot.hasData ||
-                                  snapshot.data!.isEmpty) {
-                                return const Padding(
-                                  padding: EdgeInsets.only(top: 30.0),
-                                  child: Text(
-                                    'No movies found',
-                                    textAlign: TextAlign.center,
-                                  ),
-                                );
-                              } else {
-                                return ListView.builder(
-                                  itemCount: snapshot.data!.length,
-                                  itemBuilder: (_, index) {
-                                    Movie movie = snapshot.data![index];
-
-                                    return Padding(
-                                      padding: const EdgeInsets.all(10.0),
-                                      child: Row(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          // Placeholder for movie poster
-                                          ClipRRect(
-                                            borderRadius:
-                                                BorderRadius.circular(8),
-                                            child: Image.network(
-                                              Api.imageBaseUrl +
-                                                  movie.posterPath,
-                                              height: 50,
-                                              width: 50,
-                                              errorBuilder: (_, __, ___) =>
-                                                  Container(
-                                                height: 50,
-                                                width: 50,
-                                                decoration: BoxDecoration(
-                                                  border: Border.all(
-                                                      color: Colors.red),
-                                                ),
-                                                child: const Center(
-                                                  child:
-                                                      Text('No poster found'),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          const SizedBox(
-                                            width: 10,
-                                          ),
-                                          Column(
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.start,
-                                            children: [
-                                              Text(
-                                                movie.title,
-                                                style: const TextStyle(
-                                                  fontSize: 16,
-                                                  fontWeight: FontWeight.w400,
-                                                ),
-                                              ),
-                                              const SizedBox(
-                                                height: 10,
-                                              ),
-                                              SizedBox(
-                                                width: 250,
-                                                child: Text(movie.overview),
-                                              ),
-                                            ],
-                                          ),
-                                        ],
-                                      ),
-                                    );
-                                  },
-                                );
-                              }
-                            },
-                          )
-                        ]),
+                      const SizedBox(height: 10),
+                      Text(
+                        'Known for department: ${person.knownForDepartment}',
+                        style: const TextStyle(fontSize: 16),
+                      ),
+                      const SizedBox(height: 10),
+                      Text(
+                        'Popularity rating: ${person.popularity}',
+                        style: const TextStyle(fontSize: 16),
                       ),
                     ],
                   ),
                 ),
-              )
+              ),
+              const SizedBox(height: 20),
+              const Padding(
+                padding: EdgeInsets.symmetric(vertical: 16),
+                child: Text(
+                  'Movies known for',
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+              SizedBox(
+                height: 500,
+                child: ListView.separated(
+                  itemCount: person.getMoviesWithPosters().length,
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  separatorBuilder: (_, __) => const SizedBox(width: 10),
+                  itemBuilder: (_, index) {
+                    Movie movie = person.getMoviesWithPosters()[index];
+                    return PersonItem(movie: movie, index: index + 1);
+                  },
+                ),
+              ),
+              SizedBox(height: 30)
             ],
           ),
         ),

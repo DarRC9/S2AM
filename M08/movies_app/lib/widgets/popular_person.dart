@@ -36,7 +36,6 @@ class PopularPersonItem extends StatelessWidget {
                   Icons.broken_image,
                   size: 180,
                 ),
-                // You can use a placeholder widget for loading here
               ),
             ),
           ),

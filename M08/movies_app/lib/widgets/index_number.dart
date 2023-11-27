@@ -11,7 +11,7 @@ class IndexNumber extends StatelessWidget {
     return Text(
       (number).toString(),
       style: const TextStyle(
-        fontSize: 120,
+        fontSize: 100,
         fontWeight: FontWeight.w600,
         shadows: [
           Shadow(
