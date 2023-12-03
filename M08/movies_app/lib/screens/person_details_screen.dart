@@ -6,7 +6,6 @@ import 'package:movies_app/api/api_service.dart';
 import 'package:movies_app/models/person.dart';
 import 'package:movies_app/models/movie.dart';
 import 'package:movies_app/widgets/person_item.dart';
-import 'dart:math';
 
 class PersonDetailsScreen extends StatelessWidget {
   const PersonDetailsScreen({
@@ -15,21 +14,12 @@ class PersonDetailsScreen extends StatelessWidget {
   }) : super(key: key);
 
   final Person person;
-  static List<String> backgrounds = [
-    // "https://4kwallpapers.com/images/wallpapers/black-abstract-dark-3840x2160-9729.jpg",
-    "https://images.unsplash.com/photo-1669833593439-6db11b5bc570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80",
-    // "https://4kwallpapers.com/images/wallpapers/windows-11-stock-black-abstract-black-background-amoled-1242x2208-8971.jpg",
-  ];
-
-  String getRandomBackground() {
-    Random random = Random();
-    return backgrounds[random.nextInt(backgrounds.length)];
-  }
 
   @override
   Widget build(BuildContext context) {
     ApiService.getPersonMovies(person.id);
-    String backgroundUrl = getRandomBackground();
+    String backgroundUrl =
+        "https://images.unsplash.com/photo-1669833593439-6db11b5bc570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80";
 
     return SafeArea(
       child: Scaffold(
@@ -70,8 +60,7 @@ class PersonDetailsScreen extends StatelessWidget {
                         bottomRight: Radius.circular(16),
                       ),
                       child: Image.network(
-                        // Api.imageBaseUrl + person.profilePath,
-                        "https://images.unsplash.com/photo-1669833593439-6db11b5bc570?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEyfHx8ZW58MHx8fHx8&w=1000&q=80",
+                        backgroundUrl,
                         width: Get.width,
                         height: 250,
                         fit: BoxFit.cover,
@@ -186,14 +175,14 @@ class PersonDetailsScreen extends StatelessWidget {
                   itemCount: person.getMoviesWithPosters().length,
                   shrinkWrap: true,
                   scrollDirection: Axis.horizontal,
-                  separatorBuilder: (_, __) => const SizedBox(width: 10),
+                  separatorBuilder: (_, __) => const SizedBox(width: 20),
                   itemBuilder: (_, index) {
                     Movie movie = person.getMoviesWithPosters()[index];
                     return PersonItem(movie: movie, index: index + 1);
                   },
                 ),
               ),
-              SizedBox(height: 30)
+              const SizedBox(height: 30)
             ],
           ),
         ),

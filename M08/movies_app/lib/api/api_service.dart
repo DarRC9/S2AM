@@ -6,29 +6,13 @@ import 'package:http/http.dart' as http;
 import 'package:movies_app/models/review.dart';
 
 class ApiService {
-  // static Future<List<Person>?> getPopularPersons() async {
-  //   List<Person> persons = [];
-  //   try {
-  //     http.Response response = await http.get(Uri.parse(
-  //         '${Api.baseUrl}person/popular?api_key=${Api.apiKey}&language=en-US&page=1'));
-  //     var res = jsonDecode(response.body);
-  //     res['results'].forEach(
-  //       (p) => persons.add(
-  //         Person.fromMap(p),
-  //       ),
-  //     );
-  //     return persons;
-  //   } catch (e) {
-  //     return null;
-  //   }
-  // }
   static Future<List<Person>?> getPopularPersons() async {
     List<Person> persons = [];
     try {
       http.Response response = await http.get(Uri.parse(
           '${Api.baseUrl}person/popular?api_key=${Api.apiKey}&language=en-US&page=1'));
       var res = jsonDecode(response.body);
-      res['results'].skip(2).take(5).forEach(
+      res['results'].take(10).forEach(
             (p) => persons.add(
               Person(
                 id: p['id'],

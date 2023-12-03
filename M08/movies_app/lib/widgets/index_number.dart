@@ -16,19 +16,19 @@ class IndexNumber extends StatelessWidget {
         shadows: [
           Shadow(
             offset: Offset(-1.5, -1.5),
-            color: Color(0xFF0296E5),
+            color: Color(0xFFb700ff),
           ),
           Shadow(
             offset: Offset(1.5, -1.5),
-            color: Color(0xFF0296E5),
+            color: Color(0xFFb700ff),
           ),
           Shadow(
             offset: Offset(1.5, 1.5),
-            color: Color(0xFF0296E5),
+            color: Color(0xFFb700ff),
           ),
           Shadow(
             offset: Offset(-1.5, 1.5),
-            color: Color(0xFF0296E5),
+            color: Color(0xFFb700ff),
           ),
         ],
         color: Color(0xFF242A32),

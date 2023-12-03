@@ -51,7 +51,6 @@ class DetailsScreen extends StatelessWidget {
                       child: IconButton(
                         onPressed: () {
                           Get.find<MoviesController>().addToWatchList(movie);
-                        
                         },
                         icon: Obx(
                           () =>
@@ -290,7 +289,7 @@ class DetailsScreen extends StatelessWidget {
                                                     snapshot.data![index].rating
                                                         .toString(),
                                                     style: const TextStyle(
-                                                      color: Color(0xff0296E5),
+                                                      color: Color(0xFFb700ff),
                                                     ),
                                                   )
                                                 ],

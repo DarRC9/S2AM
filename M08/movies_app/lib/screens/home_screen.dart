@@ -7,7 +7,6 @@ import 'package:movies_app/controllers/movies_controller.dart';
 import 'package:movies_app/controllers/search_controller.dart';
 import 'package:movies_app/widgets/search_box.dart';
 import 'package:movies_app/widgets/tab_builder.dart';
-import 'package:movies_app/widgets/top_rated_item.dart';
 import 'package:movies_app/widgets/popular_person.dart';
 import 'package:movies_app/controllers/persons_controller.dart';
 
@@ -70,6 +69,22 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
             ),
+            const SizedBox(
+              height: 12,
+            ),
+            const Align(
+              alignment: Alignment.centerLeft,
+              child: Text(
+                'What do you want to watch?',
+                style: TextStyle(
+                  fontWeight: FontWeight.w600,
+                  fontSize: 24,
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 24,
+            ),
             DefaultTabController(
               length: 4,
               child: Column(
@@ -78,7 +93,7 @@ class HomeScreen extends StatelessWidget {
                   const TabBar(
                       indicatorWeight: 4,
                       indicatorColor: Color(
-                        0xFF3A3F47,
+                        0xFF630099,
                       ),
                       tabs: [
                         Tab(text: 'Now playing'),
@@ -87,7 +102,7 @@ class HomeScreen extends StatelessWidget {
                         Tab(text: 'Popular'),
                       ]),
                   SizedBox(
-                    height: 400,
+                    height: 825,
                     child: TabBarView(children: [
                       TabBuilder(
                         future: ApiService.getCustomMovies(
