@@ -1,0 +1,9 @@
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\bin\Debug\REGEX_PRACTICE.exe.config
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\bin\Debug\REGEX_PRACTICE.exe
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\bin\Debug\REGEX_PRACTICE.pdb
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.Form1.resources
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.Properties.Resources.resources
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.csproj.GenerateResource.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.csproj.CoreCompileInputs.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.exe
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\REGEX_PRACTICE\obj\Debug\REGEX_PRACTICE.pdb

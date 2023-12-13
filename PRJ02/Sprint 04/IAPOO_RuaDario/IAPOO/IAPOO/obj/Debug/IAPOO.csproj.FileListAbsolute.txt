@@ -1,0 +1,52 @@
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\bin\Debug\IAPOO.exe.config
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\bin\Debug\IAPOO.exe
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\bin\Debug\IAPOO.pdb
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.csprojAssemblyReference.cache
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\PCBRecuperacio.frmPOO.resources
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.Properties.Resources.resources
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.csproj.GenerateResource.cache
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.csproj.CoreCompileInputs.cache
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.exe
+C:\Users\josep\Downloads\PCBRecuperacio\IAPOO\obj\Debug\IAPOO.pdb
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\bin\Debug\IAPOO.exe.config
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\bin\Debug\IAPOO.exe
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\bin\Debug\IAPOO.pdb
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.csprojAssemblyReference.cache
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\PCBRecuperacio.frmPOO.resources
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.Properties.Resources.resources
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.GenerateResource.cache
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.CoreCompileInputs.cache
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.exe
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\IAPOO\obj\Debug\IAPOO.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.AssemblyReference.cache
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\PCBRecuperacio.frmPOO.resources
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\IAPOO.Properties.Resources.resources
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.GenerateResource.cache
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.CoreCompileInputs.cache
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\bin\Debug\IAPOO.exe.config
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\bin\Debug\IAPOO.exe
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\bin\Debug\IAPOO.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\bin\Debug\Missatges.dll
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\bin\Debug\Missatges.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.CopyComplete
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\App\RuaDario.exe.config
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\App\RuaDario.exe
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\App\RuaDario.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\RuaDario.exe
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\IAPOO\obj\Debug\RuaDario.pdb
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.exe.config
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.exe.manifest
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.application
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.xml
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.exe
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\App\RuaDario.pdb
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.AssemblyReference.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\PCBRecuperacio.frmPOO.resources
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\IAPOO.Properties.Resources.resources
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.GenerateResource.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.CoreCompileInputs.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\RuaDario.exe.manifest
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\RuaDario.application
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\IAPOO.csproj.CopyComplete
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\RuaDario.exe
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\IAPOO\obj\Debug\RuaDario.pdb

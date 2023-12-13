@@ -52,7 +52,6 @@ class ApiService {
       return null;
     }
   }
-  //
 
   static Future<List<Movie>?> getTopRatedMovies() async {
     List<Movie> movies = [];

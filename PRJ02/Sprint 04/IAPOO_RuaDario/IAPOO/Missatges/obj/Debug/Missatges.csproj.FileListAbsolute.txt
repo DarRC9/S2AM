@@ -1,0 +1,37 @@
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\bin\Debug\Missatges.dll
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\bin\Debug\Missatges.pdb
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\obj\Debug\Missatges.csprojAssemblyReference.cache
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\obj\Debug\Missatges.dll
+C:\Users\josep\source\repos\PCBRecuperacio\Missatges\obj\Debug\Missatges.pdb
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\bin\Debug\Missatges.dll
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\bin\Debug\Missatges.pdb
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\obj\Debug\Missatges.csprojAssemblyReference.cache
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\obj\Debug\Missatges.dll
+C:\Users\josep\Downloads\PCBRecuperacio\Missatges\obj\Debug\Missatges.pdb
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\bin\Debug\Missatges.dll
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\bin\Debug\Missatges.pdb
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\obj\Debug\Missatges.csprojAssemblyReference.cache
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\obj\Debug\Missatges.dll
+C:\Salesians\22-23\S2AM\practiques\PRJ02\AF\Codi\IAPOO\Missatges\obj\Debug\Missatges.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\bin\Debug\Missatges.dll
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\bin\Debug\Missatges.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\obj\Debug\Missatges.dll
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\obj\Debug\Missatges.pdb
+C:\Users\daril\Documents\S2AM\PJ2\IAPOO\Missatges\obj\Debug\Missatges.csproj.AssemblyReference.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.dll
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.pdb
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.dll
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.pdb
+C:\Users\dario.rua\OneDrive - Travelport\Documents\S2AM\PRJ2\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.xml
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.xml
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.dll
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\bin\Debug\Missatges.pdb
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.dll
+C:\Github\S2AM\PRJ02\Sprint 04\IAPOO_RuaDario\IAPOO\Missatges\obj\Debug\Missatges.pdb

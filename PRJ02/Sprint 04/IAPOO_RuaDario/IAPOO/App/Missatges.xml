@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Missatges</name>
+    </assembly>
+    <members>
+        <member name="T:Missatges.MissatgeHeredat">
+            <summary>
+            Classe que hereda de MissatgeSimple i amplia amb tres metodes més
+            </summary>
+        </member>
+        <member name="M:Missatges.MissatgeHeredat.salutacio(System.String,System.String)">
+            <summary>
+            Metode que amb els dos parametres obtinguts creara una frase (string)
+            </summary>
+            <param name="nom">Parametre que indica el nom de l'usuari de l'aplicació</param>
+            <param name="bandol">Parametre que indica el bandol de l'usuari de l'aplicació</param>
+            <returns>String formada per els parametres i una propia</returns>
+        </member>
+        <member name="M:Missatges.MissatgeHeredat.comiat">
+            <summary>
+            Metode sense parametres que retorna una string en angles
+            </summary>
+            <returns>String inciada en el metode</returns>
+        </member>
+        <member name="M:Missatges.MissatgeHeredat.comiatCatala">
+            <summary>
+            Metode sense parametres que retorna una string en catala
+            </summary>
+            <returns>String inciada en el metode</returns>
+        </member>
+        <member name="T:Missatges.MissatgeSimple">
+            <summary>
+            Classe abstracte per no puguer invocarla directament
+            </summary>
+        </member>
+        <member name="M:Missatges.MissatgeSimple.salutacio">
+            <summary>
+            Metode simple salutacio sense cap parametre
+            </summary>
+            <returns>String generada dins del metode</returns>
+        </member>
+        <member name="M:Missatges.MissatgeSimple.salutacio(System.String)">
+            <summary>
+            Metode heredat de salutacio que rep un parametre
+            </summary>
+            <param name="nom">Parametre que dona l'usuari amb el seu nom</param>
+            <returns>String creada apartir del parametre i una strin propia</returns>
+        </member>
+        <member name="M:Missatges.MissatgeSimple.comiat">
+            <summary>
+            Metode simple de comiat sense parametres
+            </summary>
+            <returns>String creada dins del metode</returns>
+        </member>
+    </members>
+</doc>
