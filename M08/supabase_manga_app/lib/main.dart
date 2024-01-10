@@ -7,9 +7,9 @@ import 'package:supabase_manga_app/pages/sign_up_page.dart';
 
 Future<void> main() async {
   await Supabase.initialize(
-    url: 'https://gwhrpkcwemlebclcdedl.supabase.co',
+    url: 'https://gdbhnnihvwyoicslgwhh.supabase.co',
     anonKey:
-        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imd3aHJwa2N3ZW1sZWJjbGNkZWRsIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDI5MTI3NDQsImV4cCI6MjAxODQ4ODc0NH0.DEetcyT2oSyRKJacQ-P11gAuXXbMtLdrjMvUeOxy2ns',
+        'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdkYmhubmlodnd5b2ljc2xnd2hoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MDQ5MDM2MTksImV4cCI6MjAyMDQ3OTYxOX0.dON5oOOz8bpdH2GhPn5l8A_yNj772ttYvIDzJOubLtg',
   );
   runApp(MyApp());
 }
