@@ -15,7 +15,8 @@ class AccountPage extends StatefulWidget {
 class _AccountPageState extends State<AccountPage> {
   final _usernameController = TextEditingController();
   final _websiteController = TextEditingController();
-  final _mangasStream = supabase.from('mangas').stream(primaryKey: ['id']);
+  final _mangasStream = supabase.from('mangas').stream(primaryKey: ['id']).eq(
+      'profiel_id', supabase.auth.currentUser!.id);
 
   String? _avatarUrl;
   var _loading = true;
