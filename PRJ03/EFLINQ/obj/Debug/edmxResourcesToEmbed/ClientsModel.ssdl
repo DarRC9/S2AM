@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ClientsModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ContactSystem">
+    <Key>
+      <PropertyRef Name="IdSystem" />
+    </Key>
+    <Property Name="IdSystem" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdContact" Type="int" />
+    <Property Name="Description" Type="nvarchar" MaxLength="50" />
+    <Property Name="SystemValue" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NewContact">
+    <Key>
+      <PropertyRef Name="idContact" />
+    </Key>
+    <Property Name="idContact" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="50" />
+    <Property Name="BirthDate" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_ContactSystem_NewContact">
+    <End Role="NewContact" Type="Self.NewContact" Multiplicity="0..1" />
+    <End Role="ContactSystem" Type="Self.ContactSystem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NewContact">
+        <PropertyRef Name="idContact" />
+      </Principal>
+      <Dependent Role="ContactSystem">
+        <PropertyRef Name="IdContact" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ClientsModelStoreContainer">
+    <EntitySet Name="ContactSystem" EntityType="Self.ContactSystem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewContact" EntityType="Self.NewContact" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ContactSystem_NewContact" Association="Self.FK_ContactSystem_NewContact">
+      <End Role="NewContact" EntitySet="NewContact" />
+      <End Role="ContactSystem" EntitySet="ContactSystem" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

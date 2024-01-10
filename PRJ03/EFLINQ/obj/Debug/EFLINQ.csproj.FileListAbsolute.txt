@@ -1,0 +1,14 @@
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EFLINQ.exe.config
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EFLINQ.exe
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EFLINQ.pdb
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EntityFramework.dll
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EntityFramework.SqlServer.dll
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EntityFramework.xml
+C:\Github\S2AM\PRJ03\EFLINQ\bin\Debug\EntityFramework.SqlServer.xml
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.frmADONET.resources
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.Properties.Resources.resources
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.csproj.CopyComplete
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.exe
+C:\Github\S2AM\PRJ03\EFLINQ\obj\Debug\EFLINQ.pdb
