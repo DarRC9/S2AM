@@ -238,6 +238,7 @@ class _AccountPageState extends State<AccountPage> {
   Widget _buildMangasTab() {
     TextEditingController searchController = TextEditingController();
     String searchValue = '';
+    bool showLoading = false;
 
     return Column(
       children: [
@@ -274,8 +275,7 @@ class _AccountPageState extends State<AccountPage> {
                     );
                   },
                 ),
-                const SizedBox(width: 220),
-                // Add spacing between buttons
+                Spacer(),
                 IconButton(
                   icon: const Icon(Icons.search),
                   onPressed: () {
@@ -320,11 +320,23 @@ class _AccountPageState extends State<AccountPage> {
         StreamBuilder<List<Map<String, dynamic>>>(
           stream: _mangasStream,
           builder: (context, snapshot) {
-            if (!snapshot.hasData) {
+            if (showLoading) {
+              Future.delayed(Duration(seconds: 5), () {
+                setState(() {
+                  showLoading = false;
+                });
+              });
               return const Center(child: CircularProgressIndicator());
             }
-            final mangas = snapshot.data!;
 
+            if (!snapshot.hasData || snapshot.data!.isEmpty) {
+              return const Center(
+                child: Text(
+                    "You don't have any manga in your list, try to add one!"),
+              );
+            }
+
+            final mangas = snapshot.data!;
             // Filter mangas based on search criteria
             final filteredMangas = _filterMangas(mangas, searchValue);
 

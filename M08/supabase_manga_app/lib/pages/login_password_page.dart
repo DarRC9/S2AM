@@ -4,14 +4,14 @@ import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:supabase_manga_app/main.dart';
 
-class SignUpPage extends StatefulWidget {
-  const SignUpPage({super.key});
+class LoginPasswordPage extends StatefulWidget {
+  const LoginPasswordPage({Key? key}) : super(key: key);
 
   @override
-  _SignUpPageState createState() => _SignUpPageState();
+  _LoginPasswordPageState createState() => _LoginPasswordPageState();
 }
 
-class _SignUpPageState extends State<SignUpPage> {
+class _LoginPasswordPageState extends State<LoginPasswordPage> {
   bool _isLoading = false;
   bool _redirecting = false;
 
@@ -20,18 +20,18 @@ class _SignUpPageState extends State<SignUpPage> {
       TextEditingController();
   late final StreamSubscription<AuthState> _authStateSubscription;
 
-  Future<void> _signUp() async {
+  Future<void> _logInPassword() async {
     try {
       setState(() {
         _isLoading = true;
       });
-      await supabase.auth.signUp(
+      await supabase.auth.signInWithPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text.trim(),
       );
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          const SnackBar(content: Text('You have signed up successfully')),
+          const SnackBar(content: Text('You have logged in successfully')),
         );
         _emailController.clear();
         _passwordController.clear();
@@ -76,12 +76,12 @@ class _SignUpPageState extends State<SignUpPage> {
     super.dispose();
   }
 
-  void _goToSignIn() {
-    Navigator.of(context).pushReplacementNamed('/loginPassword');
+  void _goToSignUp() {
+    Navigator.of(context).pushNamed('/signup');
   }
 
   void _goToSingInWithOtp() {
-    Navigator.of(context).pushReplacementNamed('/login');
+    Navigator.of(context).pushNamed('/login');
   }
 
   @override
@@ -95,14 +95,13 @@ class _SignUpPageState extends State<SignUpPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 const Text(
-                  'Sign Up',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+                  'Log in with email and password',
+                  style: TextStyle(fontSize: 24),
                 ),
                 const SizedBox(height: 16),
                 TextField(
                   controller: _emailController,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Email',
                   ),
@@ -111,27 +110,25 @@ class _SignUpPageState extends State<SignUpPage> {
                 TextField(
                   controller: _passwordController,
                   obscureText: true,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: OutlineInputBorder(),
                     labelText: 'Password',
                   ),
                 ),
                 const SizedBox(height: 16),
                 ElevatedButton(
-                  onPressed: _isLoading ? null : _signUp,
-                  child: Text(_isLoading ? 'Loading' : 'Sign Up'),
+                  onPressed: _logInPassword,
+                  child: Text(_isLoading ? 'Loading' : 'Log In'),
                 ),
                 const SizedBox(height: 16),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     ElevatedButton(
-                        onPressed: _goToSignIn, child: Text('Log In')),
-                    // const SizedBox(height: 16),
-                    ElevatedButton(
                         onPressed: _goToSingInWithOtp,
-                        child: Text('Log In with Magick Link'))
+                        child: const Text('Log in with Magick Link')),
+                    ElevatedButton(
+                        onPressed: _goToSignUp, child: const Text('Sign up')),
                   ],
                 )
               ],

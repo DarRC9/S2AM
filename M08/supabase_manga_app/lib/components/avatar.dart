@@ -25,13 +25,23 @@ class _AvatarState extends State<Avatar> {
     return Column(
       children: [
         if (widget.imageUrl == null || widget.imageUrl!.isEmpty)
-          Container(
-            width: 150,
-            height: 150,
-            color: Colors.grey,
-            child: const Center(
-              child: Text('No Image'),
-            ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Container(
+                width: 150,
+                height: 150,
+                color: Colors.grey,
+                child: const Center(
+                  child: Text('No Image'),
+                ),
+              ),
+              ElevatedButton.icon(
+                onPressed: _isLoading ? null : _upload,
+                icon: const Icon(Icons.arrow_upward),
+                label: const Text('Upload'),
+              ),
+            ],
           )
         else
           Row(

@@ -4,6 +4,7 @@ import 'package:supabase_manga_app/pages/account_page.dart';
 import 'package:supabase_manga_app/pages/login_page.dart';
 import 'package:supabase_manga_app/pages/splash_page.dart';
 import 'package:supabase_manga_app/pages/sign_up_page.dart';
+import 'package:supabase_manga_app/pages/login_password_page.dart';
 
 Future<void> main() async {
   await Supabase.initialize(
@@ -29,12 +30,14 @@ class MyApp extends StatelessWidget {
         ),
         textButtonTheme: TextButtonThemeData(
           style: TextButton.styleFrom(
-            foregroundColor: Colors.purple[300],
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.purple[900],
           ),
         ),
         elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
-            foregroundColor: Colors.purple[300],
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.purple[900],
           ),
         ),
       ),
@@ -42,6 +45,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/': (_) => const SplashPage(),
         '/login': (_) => const LoginPage(),
+        '/loginPassword': (_) => const LoginPasswordPage(),
         '/account': (_) => const AccountPage(),
         '/signup': (_) => const SignUpPage(),
       },

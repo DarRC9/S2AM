@@ -77,6 +77,10 @@ class _LoginPageState extends State<LoginPage> {
     Navigator.of(context).pushReplacementNamed('/signup');
   }
 
+  void _goToSignIn() {
+    Navigator.of(context).pushReplacementNamed('/loginPassword');
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -97,8 +101,14 @@ class _LoginPageState extends State<LoginPage> {
             child: Text(_isLoading ? 'Loading' : 'Send Magic Link'),
           ),
           const SizedBox(height: 18),
-          ElevatedButton(
-              onPressed: _isLoading ? null : _singUp, child: Text('Sign Up')),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              ElevatedButton(
+                  onPressed: _goToSignIn, child: Text('Log In with password')),
+              ElevatedButton(onPressed: _singUp, child: Text('Sign Up')),
+            ],
+          )
         ],
       ),
     );
