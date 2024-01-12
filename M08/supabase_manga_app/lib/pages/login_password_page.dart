@@ -37,14 +37,18 @@ class _LoginPasswordPageState extends State<LoginPasswordPage> {
         _passwordController.clear();
       }
     } on AuthException catch (error) {
-      SnackBar(
-        content: Text(error.message),
-        backgroundColor: Theme.of(context).colorScheme.error,
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: Text(error.message),
+          backgroundColor: Theme.of(context).colorScheme.error,
+        ),
       );
     } catch (error) {
-      SnackBar(
-        content: const Text('Unexpected error occurred'),
-        backgroundColor: Theme.of(context).colorScheme.error,
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(
+          content: const Text('Unexpected error occurred'),
+          backgroundColor: Theme.of(context).colorScheme.error,
+        ),
       );
     } finally {
       if (mounted) {
@@ -87,55 +91,118 @@ class _LoginPasswordPageState extends State<LoginPasswordPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Log in with email and password',
-                  style: TextStyle(fontSize: 24),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _emailController,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Email',
-                  ),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _passwordController,
-                  obscureText: true,
-                  decoration: const InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Password',
-                  ),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: _logInPassword,
-                  child: Text(_isLoading ? 'Loading' : 'Log In'),
-                ),
-                const SizedBox(height: 16),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ElevatedButton(
-                        onPressed: _goToSingInWithOtp,
-                        child: const Text('Log in with Magick Link')),
-                    ElevatedButton(
-                        onPressed: _goToSignUp, child: const Text('Sign up')),
-                  ],
-                )
-              ],
-            ),
+      body: ListView(
+        padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 12),
+        children: [
+          const SizedBox(height: 25),
+          const Text(
+            'Log in with password',
+            style: TextStyle(fontSize: 24),
           ),
-        ),
+          const SizedBox(height: 16),
+          TextField(
+            controller: _emailController,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Email',
+            ),
+            style: const TextStyle(color: Colors.white),
+          ),
+          const SizedBox(height: 16),
+          TextField(
+            controller: _passwordController,
+            obscureText: true,
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Password',
+            ),
+            style: const TextStyle(color: Colors.white),
+          ),
+          const SizedBox(height: 16),
+          ElevatedButton(
+            onPressed: _isLoading ? null : _logInPassword,
+            child: Text(_isLoading ? 'Loading' : 'Log In'),
+          ),
+          const SizedBox(height: 16),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: _goToSingInWithOtp,
+                  child: const Text('Log in with Magick Link'),
+                ),
+              ),
+              const SizedBox(width: 10), // Add some space between the buttons
+              Expanded(
+                child: ElevatedButton(
+                  onPressed: _goToSignUp,
+                  child: const Text('Sign up'),
+                ),
+              ),
+            ],
+          )
+        ],
       ),
     );
   }
 }
+
+// body: SafeArea(
+//         child: Center(
+//           child: SingleChildScrollView(
+//             padding: const EdgeInsets.all(16),
+//             child: Column(
+//               mainAxisAlignment: MainAxisAlignment.center,
+//               children: [
+//                 const Text(
+//                   'Log in with password',
+//                   style: TextStyle(fontSize: 24),
+//                 ),
+//                 const SizedBox(height: 16),
+//                 TextField(
+//                   controller: _emailController,
+//                   decoration: const InputDecoration(
+//                     border: OutlineInputBorder(),
+//                     labelText: 'Email',
+//                   ),
+//                 ),
+//                 const SizedBox(height: 16),
+//                 TextField(
+//                   controller: _passwordController,
+//                   obscureText: true,
+//                   decoration: const InputDecoration(
+//                     border: OutlineInputBorder(),
+//                     labelText: 'Password',
+//                   ),
+//                 ),
+//                 const SizedBox(height: 16),
+//                 ElevatedButton(
+//                   onPressed: _logInPassword,
+//                   child: Text(_isLoading ? 'Loading' : 'Log In'),
+//                 ),
+//                 const SizedBox(height: 16),
+//                 Row(
+//                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//                   children: [
+//                     Expanded(
+//                       child: ElevatedButton(
+//                         onPressed: _goToSingInWithOtp,
+//                         child: const Text('Log in with Magick Link'),
+//                       ),
+//                     ),
+//                     const SizedBox(
+//                         width: 8), // Add some space between the buttons
+//                     Expanded(
+//                       child: ElevatedButton(
+//                         onPressed: _goToSignUp,
+//                         child: const Text('Sign up'),
+//                       ),
+//                     ),
+//                   ],
+//                 )
+//               ],
+//             ),
+//           ),
+//         ),
+//       ),

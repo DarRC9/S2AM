@@ -84,29 +84,37 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Sign In')),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
         children: [
-          const Text('Sign in via the MagicLink'),
-          const SizedBox(height: 18),
-          TextFormField(
+          const SizedBox(height: 25),
+          const Text('Sign in via the MagicLink',
+              style: TextStyle(fontSize: 24)),
+          const SizedBox(height: 16),
+          TextField(
             controller: _emailController,
-            decoration: const InputDecoration(labelText: 'Email'),
+            decoration: const InputDecoration(
+                border: OutlineInputBorder(), labelText: 'Email'),
             style: const TextStyle(color: Colors.white),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 16),
           ElevatedButton(
             onPressed: _isLoading ? null : _signIn,
             child: Text(_isLoading ? 'Loading' : 'Send Magic Link'),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 16),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              ElevatedButton(
-                  onPressed: _goToSignIn, child: Text('Log In with password')),
-              ElevatedButton(onPressed: _singUp, child: Text('Sign Up')),
+              Expanded(
+                  child: ElevatedButton(
+                      onPressed: _goToSignIn,
+                      child: Text('Log In with password'))),
+              const SizedBox(width: 10),
+              Expanded(
+                child:
+                    ElevatedButton(onPressed: _singUp, child: Text('Sign Up')),
+              ),
             ],
           )
         ],

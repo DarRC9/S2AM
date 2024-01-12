@@ -87,58 +87,58 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Center(
-          child: SingleChildScrollView(
-            padding: const EdgeInsets.all(16),
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Sign Up',
-                  style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _emailController,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Email',
-                  ),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: _passwordController,
-                  obscureText: true,
-                  style: const TextStyle(color: Colors.white),
-                  decoration: InputDecoration(
-                    border: OutlineInputBorder(),
-                    labelText: 'Password',
-                  ),
-                ),
-                const SizedBox(height: 16),
-                ElevatedButton(
-                  onPressed: _isLoading ? null : _signUp,
-                  child: Text(_isLoading ? 'Loading' : 'Sign Up'),
-                ),
-                const SizedBox(height: 16),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    ElevatedButton(
-                        onPressed: _goToSignIn, child: Text('Log In')),
-                    // const SizedBox(height: 16),
-                    ElevatedButton(
-                        onPressed: _goToSingInWithOtp,
-                        child: Text('Log In with Magick Link'))
-                  ],
-                )
-              ],
-            ),
-          ),
+        body: ListView(
+      padding: const EdgeInsets.symmetric(vertical: 18, horizontal: 12),
+      children: [
+        const SizedBox(height: 25),
+        const Text(
+          'Sign Up',
+          style: TextStyle(fontSize: 24),
         ),
-      ),
-    );
+        const SizedBox(height: 16),
+        TextField(
+          controller: _emailController,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: 'Email',
+          ),
+          style: const TextStyle(color: Colors.white),
+        ),
+        const SizedBox(height: 16),
+        TextField(
+          controller: _passwordController,
+          obscureText: true,
+          decoration: const InputDecoration(
+            border: OutlineInputBorder(),
+            labelText: 'Password',
+          ),
+          style: const TextStyle(color: Colors.white),
+        ),
+        const SizedBox(height: 16),
+        ElevatedButton(
+          onPressed: _isLoading ? null : _signUp,
+          child: Text(_isLoading ? 'Loading' : 'Sign Up'),
+        ),
+        const SizedBox(height: 16),
+        Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Expanded(
+              child: ElevatedButton(
+                onPressed: _goToSingInWithOtp,
+                child: const Text('Log in with Magick Link'),
+              ),
+            ),
+            const SizedBox(width: 10), // Add some space between the buttons
+            Expanded(
+              child: ElevatedButton(
+                onPressed: _goToSignIn,
+                child: const Text('Log In with Password'),
+              ),
+            ),
+          ],
+        )
+      ],
+    ));
   }
 }
