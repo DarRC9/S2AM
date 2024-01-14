@@ -14,9 +14,10 @@ class AccountPage extends StatefulWidget {
 
 class _AccountPageState extends State<AccountPage> {
   final _usernameController = TextEditingController();
+  final _fullNameController = TextEditingController();
   final _websiteController = TextEditingController();
   final _mangasStream = supabase.from('mangas').stream(primaryKey: ['id']).eq(
-      'profiel_id', supabase.auth.currentUser!.id);
+      'profiles_id', supabase.auth.currentUser!.id);
 
   String? _avatarUrl;
   var _loading = true;
@@ -32,6 +33,7 @@ class _AccountPageState extends State<AccountPage> {
       final data =
           await supabase.from('profiles').select().eq('id', userId).single();
       _usernameController.text = (data['username'] ?? '') as String;
+      _fullNameController.text = (data['full_name'] ?? '') as String;
       _websiteController.text = (data['website'] ?? '') as String;
       _avatarUrl = (data['avatar_url'] ?? '') as String;
     } on PostgrestException catch (error) {
@@ -58,11 +60,13 @@ class _AccountPageState extends State<AccountPage> {
       _loading = true;
     });
     final userName = _usernameController.text.trim();
+    final fullName = _fullNameController.text.trim();
     final website = _websiteController.text.trim();
     final user = supabase.auth.currentUser;
     final updates = {
       'id': user!.id,
       'username': userName,
+      'full_name': fullName,
       'website': website,
       'updated_at': DateTime.now().toIso8601String(),
     };
@@ -207,37 +211,61 @@ class _AccountPageState extends State<AccountPage> {
                 onUpload: _onUpload,
               ),
               const SizedBox(height: 18),
-              TextFormField(
-                controller: _usernameController,
-                decoration: const InputDecoration(labelText: 'Username'),
-              ),
-              const SizedBox(height: 18),
-              TextFormField(
-                controller: _websiteController,
-                decoration: const InputDecoration(labelText: 'Biography'),
-              ),
-              const SizedBox(height: 18),
-              Row(
-                mainAxisAlignment:
-                    MainAxisAlignment.spaceEvenly, // Adjust alignment as needed
-                children: [
-                  ElevatedButton(
-                    onPressed: _loading ? null : _updateProfile,
-                    child: Text(_loading ? 'Saving...' : 'Update'),
+              Container(
+                  padding: const EdgeInsets.all(15),
+                  decoration: BoxDecoration(
+                    border: Border.all(
+                      color: Colors.white,
+                      width: 2,
+                    ),
+                    borderRadius: BorderRadius.circular(20),
                   ),
-                  TextButton(
-                    onPressed: _signOut,
-                    child: const Text('Sign Out'),
-                  ),
-                ],
-              ),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      TextFormField(
+                        controller: _usernameController,
+                        decoration:
+                            const InputDecoration(labelText: 'Username'),
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                      const SizedBox(height: 18),
+                      TextFormField(
+                        controller: _fullNameController,
+                        decoration:
+                            const InputDecoration(labelText: 'Full Name'),
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                      const SizedBox(height: 18),
+                      TextFormField(
+                        controller: _websiteController,
+                        decoration:
+                            const InputDecoration(labelText: 'Biography'),
+                        style: const TextStyle(color: Colors.white),
+                      ),
+                      const SizedBox(height: 18),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment
+                            .spaceEvenly, // Adjust alignment as needed
+                        children: [
+                          ElevatedButton(
+                            onPressed: _loading ? null : _updateProfile,
+                            child: Text(_loading ? 'Saving...' : 'Update'),
+                          ),
+                          TextButton(
+                            onPressed: _signOut,
+                            child: const Text('Sign Out'),
+                          ),
+                        ],
+                      ),
+                    ],
+                  )),
             ],
           );
   }
 
   Widget _buildMangasTab() {
     TextEditingController searchController = TextEditingController();
-    String searchValue = '';
     bool showLoading = false;
 
     return Column(
@@ -254,21 +282,58 @@ class _AccountPageState extends State<AccountPage> {
                     showDialog(
                       context: context,
                       builder: (context) {
+                        TextEditingController titleController =
+                            TextEditingController();
+                        TextEditingController authorController =
+                            TextEditingController();
+                        TextEditingController chaptersController =
+                            TextEditingController();
+
                         return SimpleDialog(
-                          title: const Text('Add manga to your list'),
+                          title: const Text(
+                            'Add manga to your list',
+                            style: TextStyle(color: Colors.white),
+                          ),
                           contentPadding: const EdgeInsets.only(
                               left: 30, right: 30, top: 20, bottom: 2),
                           children: [
-                            TextFormField(onFieldSubmitted: (value) async {
-                              await supabase.from('mangas').insert([
-                                {
-                                  'title': value,
-                                  'profiles_id': supabase.auth.currentUser!.id,
-                                }
-                              ]);
+                            TextFormField(
+                              controller: titleController,
+                              style: const TextStyle(color: Colors.white),
+                              decoration: InputDecoration(labelText: 'Title'),
+                            ),
+                            TextFormField(
+                              controller: authorController,
+                              style: const TextStyle(color: Colors.white),
+                              decoration: InputDecoration(labelText: 'Author'),
+                            ),
+                            TextFormField(
+                              controller: chaptersController,
+                              style: const TextStyle(color: Colors.white),
+                              decoration:
+                                  InputDecoration(labelText: 'Chapters'),
+                            ),
+                            SizedBox(height: 10),
+                            ElevatedButton(
+                              onPressed: () async {
+                                String title = titleController.text;
+                                String author = authorController.text;
+                                String chapters = chaptersController.text;
 
-                              Navigator.of(context).pop();
-                            })
+                                await supabase.from('mangas').insert([
+                                  {
+                                    'title': title,
+                                    'author': author,
+                                    'chapters': chapters,
+                                    'profiles_id':
+                                        supabase.auth.currentUser!.id,
+                                  }
+                                ]);
+
+                                Navigator.of(context).pop();
+                              },
+                              child: Text('Add'),
+                            ),
                           ],
                         );
                       },
@@ -285,10 +350,11 @@ class _AccountPageState extends State<AccountPage> {
                         return AlertDialog(
                           title: const Text('Search Manga'),
                           content: TextField(
+                            style: const TextStyle(color: Colors.white),
                             controller: searchController,
                             onChanged: (value) {
                               setState(() {
-                                searchValue = value;
+                                // searchValue = value;
                               });
                             },
                           ),
@@ -313,6 +379,7 @@ class _AccountPageState extends State<AccountPage> {
                     );
                   },
                 ),
+                const SizedBox(width: 15),
               ],
             ),
           ),
@@ -337,16 +404,40 @@ class _AccountPageState extends State<AccountPage> {
             }
 
             final mangas = snapshot.data!;
-            // Filter mangas based on search criteria
-            final filteredMangas = _filterMangas(mangas, searchValue);
 
             return Expanded(
               child: ListView.builder(
-                itemCount: filteredMangas.length,
+                itemCount: mangas.length,
                 itemBuilder: (context, index) {
-                  final manga = filteredMangas[index];
+                  final manga = mangas[index];
+
+                  Widget coverWidget = Container(
+                    height: 400,
+                    color: Colors.grey, // Gray background color
+                  );
+
+                  if (manga['cover_img'] != null && manga['cover_img'] != '') {
+                    coverWidget = Image.network(
+                      manga['cover_img'] as String,
+                      height: 400,
+                      fit: BoxFit.cover,
+                    );
+                  }
+
                   return ListTile(
-                    title: Text(manga['title'] as String),
+                    title: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(manga['title'] as String,
+                            style: TextStyle(
+                                fontSize: 20, fontWeight: FontWeight.bold)),
+                        Text('Author: ${manga['author']}',
+                            style: TextStyle(fontSize: 16)),
+                        Text('Chapters: ${manga['chapters']}',
+                            style: TextStyle(fontSize: 16)),
+                      ],
+                    ),
+                    leading: coverWidget,
                     trailing: IconButton(
                       icon: const Icon(Icons.delete),
                       onPressed: () async {
@@ -361,18 +452,20 @@ class _AccountPageState extends State<AccountPage> {
               ),
             );
           },
-        ),
+        )
       ],
     );
   }
 
-  List<Map<String, dynamic>> _filterMangas(
-      List<Map<String, dynamic>> allMangas, String searchValue) {
-    // Filter mangas based on search criteria
-    return allMangas
-        .where((manga) => (manga['title'] as String)
-            .toLowerCase()
-            .contains(searchValue.toLowerCase()))
-        .toList();
-  }
+  // Future<List<String>> _searchMangas(String title) async {
+  //   final results = await supabase
+  //       .from('mangas')
+  //       .select('title')
+  //       .textSearch('fts', "$title:*");
+
+  //   if (results. != null) {
+  //     throw results.error!;
+  //   }
+  //   return results.data as List<String>;
+  // }
 }

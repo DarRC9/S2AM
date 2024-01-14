@@ -29,11 +29,15 @@ class _AvatarState extends State<Avatar> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Container(
-                width: 150,
-                height: 150,
-                color: Colors.grey,
-                child: const Center(
-                  child: Text('No Image'),
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white, width: 2)),
+                child: Container(
+                  width: 150,
+                  height: 150,
+                  color: Colors.grey,
+                  child: const Center(
+                    child: Text('No Image'),
+                  ),
                 ),
               ),
               ElevatedButton.icon(
@@ -47,11 +51,15 @@ class _AvatarState extends State<Avatar> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Image.network(
-                widget.imageUrl!,
-                width: 150,
-                height: 150,
-                fit: BoxFit.cover,
+              Container(
+                decoration: BoxDecoration(
+                    border: Border.all(color: Colors.white, width: 2)),
+                child: Image.network(
+                  widget.imageUrl!,
+                  width: 150,
+                  height: 150,
+                  fit: BoxFit.cover,
+                ),
               ),
               ElevatedButton.icon(
                 onPressed: _isLoading ? null : _upload,
