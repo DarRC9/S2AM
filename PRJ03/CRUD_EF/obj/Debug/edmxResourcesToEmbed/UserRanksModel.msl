@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="UserRanksModelStoreContainer" CdmEntityContainer="UserRanksEntities">
+    <EntitySetMapping Name="UserRanks">
+      <EntityTypeMapping TypeName="UserRanksModel.UserRank">
+        <MappingFragment StoreEntitySet="UserRanks">
+          <ScalarProperty Name="idUserRank" ColumnName="idUserRank" />
+          <ScalarProperty Name="CodeRank" ColumnName="CodeRank" />
+          <ScalarProperty Name="DescRank" ColumnName="DescRank" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

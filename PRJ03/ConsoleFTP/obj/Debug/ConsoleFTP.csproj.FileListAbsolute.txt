@@ -1,0 +1,7 @@
+C:\Github\S2AM\PRJ03\ConsoleFTP\bin\Debug\ConsoleFTP.exe.config
+C:\Github\S2AM\PRJ03\ConsoleFTP\bin\Debug\ConsoleFTP.exe
+C:\Github\S2AM\PRJ03\ConsoleFTP\bin\Debug\ConsoleFTP.pdb
+C:\Github\S2AM\PRJ03\ConsoleFTP\obj\Debug\ConsoleFTP.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ03\ConsoleFTP\obj\Debug\ConsoleFTP.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ03\ConsoleFTP\obj\Debug\ConsoleFTP.exe
+C:\Github\S2AM\PRJ03\ConsoleFTP\obj\Debug\ConsoleFTP.pdb

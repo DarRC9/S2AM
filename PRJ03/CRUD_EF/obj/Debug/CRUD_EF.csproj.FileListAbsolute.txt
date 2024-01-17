@@ -1,0 +1,15 @@
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\CRUD_EF.exe.config
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\CRUD_EF.exe
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\CRUD_EF.pdb
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\EntityFramework.dll
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\EntityFramework.SqlServer.dll
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\EntityFramework.xml
+C:\Github\S2AM\PRJ03\CRUD_EF\bin\Debug\EntityFramework.SqlServer.xml
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.frmCRUDEF.resources
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.Properties.Resources.resources
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.csproj.CopyComplete
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.exe
+C:\Github\S2AM\PRJ03\CRUD_EF\obj\Debug\CRUD_EF.pdb
