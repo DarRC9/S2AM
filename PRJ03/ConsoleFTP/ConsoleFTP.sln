@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.34031.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleFTP", "ConsoleFTP.csproj", "{18350373-2CC7-49B8-A3C9-94FD5E7042EA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{5D5DAEEB-A2B8-4FCB-9650-6E3A74F8E281}"
+	ProjectSection(SolutionItems) = preProject
+		Files\credentials.xml = Files\credentials.xml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
