@@ -12,6 +12,7 @@ using System.Net;
 using System.Threading;
 using System.Net.NetworkInformation;
 using System.Xml.Linq;
+using System.IO;
 
 namespace TCPClient
 {
@@ -21,21 +22,119 @@ namespace TCPClient
         {
             InitializeComponent();
         }
-        private int pingTrys = 0;
-        private IPEndPoint _ipEndPoint;
+
+        private NetworkStream _networkStream;
         private IPAddress _ipAddress;
-        private string _serverName;
         private int _portNumber;
         private TcpClient _tcpClient;
         private bool _isConnected = false;
-        private bool _networkAvailability = false;
+
+        private Thread checkConnectionThread;
+        private Thread sendMessageThread;
+        private delegate void UpdateUI(string status);
+        private delegate void UpdateUIWithoutParam();
+
+        //
+        private Thread sendFileThread;
+        private string _sendingFilePath = "";
+        private const int BufferSize = 1024;
+
 
         private void FillConsole(string status)
         {
-            lbx_console.Items.Add(status);
+            if (lbx_console.InvokeRequired)
+            {
+                UpdateUI updateUI = FillConsole;
+                BeginInvoke(updateUI, status);
+            }
+            else
+            {
+                lbx_console.Items.Add(status);
+            }
         }
 
-        delegate void ThreadDel(string status);
+        private void OpenCredentials()
+        {
+            if (txb_ip.InvokeRequired && txb_message.InvokeRequired)
+            {
+                UpdateUIWithoutParam updateUI = OpenCredentials;
+                BeginInvoke(updateUI);
+            }
+            else
+            {
+                try
+                {
+                    XDocument doc = XDocument.Load("./../../ServerCredentials/TCPSettings.xml");
+
+                    XElement tcpElement = doc.Descendants("TCP").FirstOrDefault();
+                    if (tcpElement != null)
+                    {
+                        txb_ip.Text = tcpElement.Element("IP")?.Value;
+                        txb_port.Text = tcpElement.Element("Port")?.Value;
+                        txb_ipA.Text = tcpElement.Element("IP")?.Value;
+                        txb_portA.Text = tcpElement.Element("Port")?.Value;
+                    }
+                    else
+                    {
+                        MessageBox.Show("TCP credential not found inside XML file");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error when accessing XML: " + ex.Message);
+                }
+            }
+        }
+
+        private void UpdateCredentials()
+        {
+            if (txb_ip.InvokeRequired && txb_message.InvokeRequired)
+            {
+                UpdateUIWithoutParam updateUI = OpenCredentials;
+                BeginInvoke(updateUI);
+            }
+            else
+            {
+                try
+                {
+                    XDocument doc = XDocument.Load("./../../ServerCredentials/TCPSettings.xml");
+
+                    XElement tcpElement = doc.Descendants("TCP").FirstOrDefault();
+                    if (tcpElement != null)
+                    {
+                        tcpElement.Element("IP").Value = txb_ip.Text;
+                        tcpElement.Element("Port").Value = txb_port.Text;
+                    }
+                    else
+                    {
+                        MessageBox.Show("TCP credential not found inside XML file");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Error when accesing XML: " + ex.Message);
+                }
+            }
+        }
+
+        private void SendMessage()
+        {
+            if (!string.IsNullOrWhiteSpace(txb_message.Text))
+            {
+                _tcpClient = new TcpClient(_ipAddress.ToString(), _portNumber);
+
+                Byte[] message = Encoding.ASCII.GetBytes(txb_message.Text);
+                _networkStream = _tcpClient.GetStream();
+
+                _networkStream.Write(message, 0, message.Length);
+            }
+            else
+            {
+                MessageBox.Show("Can't send empty message to the server");
+            }
+            _networkStream.Close();
+        }
+
         private void CheckConnection()
         {
             pnl_status.BackColor = Color.Yellow;
@@ -44,119 +143,97 @@ namespace TCPClient
             {
                 try
                 {
-                    while (pingTrys < 10)
+                    for (int i = 0; i < 10; i++)
                     {
-                        pingTrys++;
                         Ping serverPing = new Ping();
                         PingReply reply = serverPing.Send(_ipAddress, _portNumber);
-                        lbx_console.ForeColor = Color.Purple;
+                        lbx_console.ForeColor = Color.LightPink;
                         if (reply.Address != null)
                         {
                             string status = (reply.Status.ToString() == "Success") ? "OK" : "NOK";
-                            if (lbx_console.InvokeRequired)
-                            {
-                                ThreadDel d = new ThreadDel(FillConsole);
-                                this.Invoke(d, new object[] { "Ping " + pingTrys + " - " + status });
-                            }
-                            else
-                            {
-                                lbx_console.Items.Add("Ping " + pingTrys + " - " + status);
-                            }
-                            _networkAvailability = true;
+                            FillConsole("Ping " + (i + 1) + " - " + status);
+                            Thread.Sleep(500);
+                            _isConnected = true;
                         }
                     }
-                    //for (int i = 0; i < 10; i++)
-                    //{
-                        
-                    //} 
                 }
                 catch (Exception ex)
                 {
                     MessageBox.Show("Error when pinging server: " + ex.Message);
                 }
-            } else
+            }
+            if (_isConnected)
             {
+                pnl_status.BackColor = Color.Green;
+                OpenCredentials();
+            }
+            else
+            {
+                pnl_status.BackColor = Color.Red;
             }
         }
 
-        private void OpenCredentials()
+        private void ChangeStatus(string statusMessage)
         {
+            if (lbl_Status.InvokeRequired)
+            {
+                UpdateUI updateUI = ChangeStatus;
+                BeginInvoke(updateUI, statusMessage);
+            }
+            else
+            {
+                lbl_Status.Text = statusMessage;
+            }
+        }
+
+        private void SendTCP()
+        {
+            byte[] SendingBuffer = null;
             try
             {
-                XDocument doc = XDocument.Load("./../../ServerCredentials/TCPSettings.xml");
-
-                XElement tcpElement = doc.Descendants("TCP").FirstOrDefault();
-                if (tcpElement != null)
+                _tcpClient = new TcpClient(_ipAddress.ToString(), _portNumber);
+                ChangeStatus("Connected to the Server...\n");
+                _networkStream = _tcpClient.GetStream();
+                FileStream Fs = new FileStream(_sendingFilePath, FileMode.Open, FileAccess.Read);
+                int NoOfPackets = Convert.ToInt32(Math.Ceiling(Convert.ToDouble(Fs.Length) / Convert.ToDouble(BufferSize)));
+                int TotalLength = (int)Fs.Length, CurrentPacketLength, counter = 0;
+                for (int i = 0; i < NoOfPackets; i++)
                 {
-                    txb_ip.Text = tcpElement.Element("IP")?.Value;
-                    txb_port.Text = tcpElement.Element("Port")?.Value;
-                } else {
-                    MessageBox.Show("TCP credential not found inside XML file");
+                    if (TotalLength > BufferSize)
+                    {
+                        CurrentPacketLength = BufferSize;
+                        TotalLength = TotalLength - CurrentPacketLength;
+                    }
+                    else
+                        CurrentPacketLength = TotalLength;
+                    SendingBuffer = new byte[CurrentPacketLength];
+                    Fs.Read(SendingBuffer, 0, CurrentPacketLength);
+                    _networkStream.Write(SendingBuffer, 0, (int)SendingBuffer.Length);
                 }
+                ChangeStatus(lbl_Status.Text + "Sent " + Fs.Length.ToString() + "bytes to the server");
+                Fs.Close();
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Error when accesing XML: " + ex.Message);
+                MessageBox.Show("Error when triying to send message: " + ex.Message);
             }
-        }
-
-        private void UpdateCredentials()
-        {
-            try
-            {
-                XDocument doc = XDocument.Load("./../../ServerCredentials/TCPSettings.xml");
-
-                XElement tcpElement = doc.Descendants("TCP").FirstOrDefault();
-                if (tcpElement != null)
-                {
-                    tcpElement.Element("IP").Value = txb_ip.Text;
-                    tcpElement.Element("Port").Value = txb_port.Text;
-                }
-                else
-                {
-                    MessageBox.Show("TCP credential not found inside XML file");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Error when accesing XML: " + ex.Message);
-            }
-        }
-
-        private void SendMessage()
-        {
-            _tcpClient = new TcpClient(_ipEndPoint);
-
-            Byte[] dades = Encoding.ASCII.GetBytes(txb_message.Text);
-            NetworkStream ns = _tcpClient.GetStream();
-
-            ns.Write(dades, 0, dades.Length);
         }
 
         private void btn_comprovarXarxa_Click(object sender, EventArgs e)
         {
             _ipAddress = IPAddress.Parse(txb_ip.Text);
             _portNumber = int.Parse(txb_port.Text);
+            checkConnectionThread = new Thread(CheckConnection);
 
-            Thread checkConnectionThread = new Thread(CheckConnection);
             checkConnectionThread.Start();
-            //MessageBox.Show(_networkAvailability.ToString());
-            bool hasConection = _networkAvailability;
-            MessageBox.Show(hasConection.ToString());
-
-            if (hasConection)
-            {
-                pnl_status.BackColor = Color.Green;
-                OpenCredentials();
-            } else
-            {
-                pnl_status.BackColor = Color.Red;
-            }
         }
 
         private void btn_sendMessage_Click(object sender, EventArgs e)
         {
-            SendMessage();
+            _ipAddress = IPAddress.Parse(txb_ip.Text);
+            _portNumber = int.Parse(txb_port.Text);
+            sendMessageThread = new Thread(SendMessage);
+            sendMessageThread.Start();
         }
 
         private void btn_config_Click(object sender, EventArgs e)
@@ -166,24 +243,45 @@ namespace TCPClient
                 UpdateCredentials();
             } else
             {
-                MessageBox.Show("Can't update credential with empty values");
+                MessageBox.Show("Can't update credentials with empty values");
             }
         }
+
+        private void btn_desconnect_Click(object sender, EventArgs e)
+        {
+            checkConnectionThread.Abort();
+            _networkStream.Close();
+            _tcpClient.Close();
+            MessageBox.Show("You have disconnected from the server");
+        }
+
+        private void btn_browseFile_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog Dlg = new OpenFileDialog();
+            Dlg.Filter = "All Files (*.*)|*.*";
+            Dlg.CheckFileExists = true;
+            Dlg.Title = "Choose a File";
+            Dlg.InitialDirectory = @"C:\";
+            if (Dlg.ShowDialog() == DialogResult.OK)
+            {
+                _sendingFilePath = Dlg.FileName;
+
+            }
+        }
+            
+        private void btn_sendFile_Click(object sender, EventArgs e)
+        {
+            if (_sendingFilePath != "")
+            {
+                _ipAddress = IPAddress.Parse(txb_ipA.Text);
+                _portNumber = int.Parse(txb_portA.Text);
+                sendFileThread = new Thread(SendTCP);
+                sendFileThread.Start();
+  
+            }
+            else
+                MessageBox.Show("Select a file", "Warning");
+        }
+
     }
-
-    //TcpListener Listener = new TcpListener(_ipAddress, _portNumber);
-    //Listener.Start();
-    //_isConnected = true;
-
-    //while (_isConnected)
-    //{
-    //    if (Listener.Pending())
-    //    {
-    //        TcpClient client =
-    //        Listener.AcceptTcpClient();
-    //        NetworkStream ns = client.GetStream();
-    //        byte[] buffer = new byte[1024];
-    //        ns.Read(buffer, 0, buffer.Length);
-    //    }
-    //}
 }

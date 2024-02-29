@@ -8,3 +8,13 @@ C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPServer\obj\Debug\TCP
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.exe
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.pdb
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\bin\Debug\PracticaTCP.exe.config
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\bin\Debug\PracticaTCP.exe
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\bin\Debug\PracticaTCP.pdb
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\TCPServer.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.frmServer.resources
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.Properties.Resources.resources
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\TCPServer.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\TCPServer.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.exe
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPServer\obj\Debug\PracticaTCP.pdb

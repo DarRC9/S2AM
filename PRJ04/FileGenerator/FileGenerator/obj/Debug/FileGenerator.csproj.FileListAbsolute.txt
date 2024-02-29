@@ -1,0 +1,10 @@
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\bin\Debug\FileGenerator.exe.config
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\bin\Debug\FileGenerator.exe
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\bin\Debug\FileGenerator.pdb
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.FileGenerator.resources
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.Properties.Resources.resources
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.exe
+C:\Github\S2AM\PRJ04\FileGenerator\FileGenerator\obj\Debug\FileGenerator.pdb

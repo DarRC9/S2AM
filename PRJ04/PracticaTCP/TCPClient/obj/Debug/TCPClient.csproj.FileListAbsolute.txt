@@ -8,3 +8,13 @@ C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPClient\bin\Debug\TCP
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPClient\bin\Debug\TCPClient.pdb
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.exe
 C:\Users\daril\Documents\GitHub\DAM-2Y\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.pdb
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\bin\Debug\TCPClient.exe.config
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\bin\Debug\TCPClient.exe
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\bin\Debug\TCPClient.pdb
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.csproj.AssemblyReference.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.frmClient.resources
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.Properties.Resources.resources
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.csproj.GenerateResource.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.csproj.CoreCompileInputs.cache
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.exe
+C:\Github\S2AM\PRJ04\PracticaTCP\TCPClient\obj\Debug\TCPClient.pdb
